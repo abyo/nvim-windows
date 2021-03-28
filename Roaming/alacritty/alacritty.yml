@@ -2,10 +2,8 @@ colors:
   # Default colors
   primary:
     background: "#1e2127"
-    # background: "#2E3440"
     foreground: "#D8DEE9"
 
-  # Normal colors
   normal:
     black: "#3B4252"
     red: "#BF616A"
@@ -16,7 +14,6 @@ colors:
     cyan: "#88C0D0"
     white: "#abb2bf"
 
-  # Bright colors
   bright:
     black: "#5c6370"
     red: "#e06c75"
@@ -27,7 +24,7 @@ colors:
     cyan: "#56b6c2"
     white: "#ECEFF4"
 
-background_opacity: 1.0
+background_opacity: 0.98
 
 font:
   normal:
@@ -44,7 +41,7 @@ font:
     style: Bold Italic
 
   # Point size
-  size: 22.0
+  size: 16.0
 
   offset:
     x: 0
@@ -95,3 +92,4 @@ key_bindings:
   - { key: PageDown,  mods: None,          action: ScrollPageDown, mode: ~Alt  }
   - { key: Home,      mods: Shift,         action: ScrollToTop,    mode: ~Alt  }
   - { key: End,       mods: Shift,         action: ScrollToBottom, mode: ~Alt  }
+  - { key: Key3,      mods: Alt,           chars: "#"                          }
