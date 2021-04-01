@@ -7,4 +7,5 @@ call plug#begin('~/AppData/Local/nvim/autoload/plugged')
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
   Plug 'airblade/vim-rooter'
+  Plug 'mhinz/vim-startify'
 call plug#end()
