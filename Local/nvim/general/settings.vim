@@ -37,6 +37,7 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 source $VIMRUNTIME/mswin.vim
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
+let g:netrw_fastbrowse = 0
 
 " You can't stop me
 cmap w!! w !sudo tee %

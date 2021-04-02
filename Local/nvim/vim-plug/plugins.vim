@@ -8,4 +8,5 @@ call plug#begin('~/AppData/Local/nvim/autoload/plugged')
   Plug 'junegunn/fzf.vim'
   Plug 'airblade/vim-rooter'
   Plug 'mhinz/vim-startify'
+  Plug 'mhinz/vim-signify'
 call plug#end()
