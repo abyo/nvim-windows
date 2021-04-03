@@ -8,7 +8,6 @@ let g:startify_lists = [
 
 let g:startify_bookmarks = [
             \ { 'i': '~/AppData/Local/nvim/init.vim' },
-            \ { 'r': 'F:\code\perso\djs\rpg' },
             \ ]
 
 let g:startify_custom_header = [

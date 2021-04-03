@@ -10,11 +10,12 @@
 "   `--'   `--'  `--'  `--'      `--'    
 " ======================================= "
 
-source $HOME/AppData/Local/nvim/plugins/plugins.vim
+source $HOME/AppData/Local/nvim/plugins.vim
 source $HOME/AppData/Local/nvim/general/settings.vim
-source $HOME/AppData/Local/nvim/keys/mappings.vim
+source $HOME/AppData/Local/nvim/general/mappings.vim
 source $HOME/AppData/Local/nvim/plug-config/fzf.vim
 source $HOME/AppData/Local/nvim/plug-config/project-start.vim
+luafile $HOME/AppData/Local/nvim/plug-config/compe.lua
 
 " ================ "
 "   THEME CONFIG
@@ -24,7 +25,7 @@ if (has("autocmd") && !has("gui_running"))
 augroup colorset
 autocmd!
     let s:white = { "gui": "#ABB2BF", "cterm": "145", "cterm16" : "7" }
-    autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": s:white }) " `bg` will not be styled since there is no `bg` setting
+    autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": s:white })
   augroup END
 endif
 
@@ -50,3 +51,10 @@ let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 let g:airline_theme = 'onedark'
 
+" ================ "
+"    LSP CONFIG
+" ================ "
+
+autocmd BufWritePre *.js lua vim.lsp.buf.formatting_sync(nil, 100)
+autocmd BufWritePre *.jsx lua vim.lsp.buf.formatting_sync(nil, 100)
+autocmd BufWritePre *.py lua vim.lsp.buf.formatting_sync(nil, 100)

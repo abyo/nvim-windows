@@ -9,4 +9,6 @@ call plug#begin('~/AppData/Local/nvim/autoload/plugged')
   Plug 'airblade/vim-rooter'
   Plug 'mhinz/vim-startify'
   Plug 'mhinz/vim-signify'
+  Plug 'neovim/nvim-lspconfig'
+  Plug 'hrsh7th/nvim-compe'
 call plug#end()

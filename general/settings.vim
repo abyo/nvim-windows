@@ -1,5 +1,14 @@
-" set leader key
-let g:mapleader = "\<Space>"
+" ============================================= "
+"      .-') _      (`-.           _   .-')    
+"     ( OO ) )   _(OO  )_        ( '.( OO )_  
+" ,--./ ,--,',--(_/   ,. \ ,-.-') ,--.   ,--.)
+" |   \ |  |\\   \   /(__/ |  |OO)|   `.'   | 
+" |    \|  | )\   \ /   /  |  |  \|         | 
+" |  .     |/  \   '   /,  |  |(_/|  |'.'|  | 
+" |  |\    |    \     /__),|  |_.'|  |   |  | 
+" |  | \   |     \   /   (_|  |   |  |   |  | 
+" `--'  `--'      `-'      `--'   `--'   `--' 
+" ============================================= "
 
 syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
@@ -27,17 +36,12 @@ set cursorline                          " Enable highlighting of the current lin
 set background=dark                     " tell vim what the background color looks like
 set showtabline=2                       " Always show tabs
 set noshowmode                          " We don't need to see things like -- INSERT -- anymore
-set nobackup                            " This is recommended by coc
-set nowritebackup                       " This is recommended by coc
 set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
-"set autochdir                           " Your working directory will always be the same as your working directory
-source $VIMRUNTIME/mswin.vim
+source $VIMRUNTIME/mswin.vim            " Allows copy/paste on Windows
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
-let g:netrw_fastbrowse = 0
-
-" You can't stop me
-cmap w!! w !sudo tee %
+let g:netrw_fastbrowse = 0              " close netrw explore when opening a new file
+let g:mapleader = "\<Space>"
