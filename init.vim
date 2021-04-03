@@ -60,3 +60,23 @@ let g:airline_theme = 'onedark'
 autocmd BufWritePre *.js lua vim.lsp.buf.formatting_sync(nil, 100)
 autocmd BufWritePre *.jsx lua vim.lsp.buf.formatting_sync(nil, 100)
 autocmd BufWritePre *.py lua vim.lsp.buf.formatting_sync(nil, 100)
+
+" ================ "
+"    QUICKSCOPE
+" ================ "
+
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
+highlight QuickScopePrimary guifg='#00C7DF' gui=underline ctermfg=155 cterm=underline
+highlight QuickScopeSecondary guifg='#afff5f' gui=underline ctermfg=81 cterm=underline
+
+let g:qs_max_chars=150
+
+" ================ "
+"      SNEAK
+" ================ "
+
+let g:sneak#label = 1
+let g:sneak#use_ic_scs = 1
+let g:sneak#s_next = 1
+

@@ -13,6 +13,8 @@
 call plug#begin('~/AppData/Local/nvim/autoload/plugged')
 	Plug 'jiangmiao/auto-pairs'
   Plug 'joshdick/onedark.vim'
+  Plug 'justinmk/vim-sneak'
+  Plug 'unblevable/quick-scope'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
