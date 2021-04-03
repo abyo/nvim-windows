@@ -14,10 +14,6 @@ if has('win32')
 	let g:fzf_bin = { 'preview' : 'preview.ps1' }
 endif
 
-map <C-p> :Files<CR>
-map <leader>f :Rg<CR>
-nnoremap <C-f> :BLines<CR>
-
 " Border color
 let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.8, 'height': 0.8,'yoffset':0.5,'xoffset': 0.5, 'highlight': 'Todo', 'border': 'sharp' } }
 

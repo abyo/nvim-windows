@@ -28,6 +28,11 @@ nnoremap <C-Q> :wq!<CR>
 nnoremap <C-w> :bd<CR>
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
+" Fzf
+map <leader> :Files<CR>
+map <leader>f :Rg<CR>
+nnoremap <C-f> :BLines<CR>
+
 " Better tabbing
 vnoremap < <gv
 vnoremap > >gv
