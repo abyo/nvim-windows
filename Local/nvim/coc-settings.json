@@ -1,4 +1,0 @@
-{
-  "explorer.width": 30,
-  "coc.preferences.formatOnSaveFiletypes": ["markdown", "javascript", "html", "typescript"]
-}
