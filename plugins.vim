@@ -25,4 +25,6 @@ call plug#begin('~/AppData/Local/nvim/autoload/plugged')
   Plug 'neovim/nvim-lspconfig'
   Plug 'hrsh7th/nvim-compe'
   Plug 'cespare/vim-toml'
+  Plug 'sbdchd/neoformat'
+  Plug 'tpope/vim-commentary'
 call plug#end()
