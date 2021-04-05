@@ -15,3 +15,4 @@ $uri = 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 )
 ```
 
+Read `commands.txt` to know more about commands (wip).

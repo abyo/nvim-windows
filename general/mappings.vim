@@ -42,6 +42,7 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+nnoremap <C-j> :terminal<CR>
 
 " Leave terminal mode
 tnoremap <Esc> <C-\><C-n>
@@ -59,3 +60,8 @@ nnoremap <silent> <C-p> <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
 " Sneak
 map gS <Plug>Sneak_,
 map gs <Plug>Sneak_;
+
+" Wrap mode
+nnoremap <Leader>ws :SoftWrapMode<CR>
+nnoremap <Leader>wh :HardWrapMode<CR>
+nnoremap <Leader>wt :ToggleWrapMode<CR>
