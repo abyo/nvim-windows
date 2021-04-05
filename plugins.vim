@@ -24,4 +24,5 @@ call plug#begin('~/AppData/Local/nvim/autoload/plugged')
   Plug 'mhinz/vim-signify'
   Plug 'neovim/nvim-lspconfig'
   Plug 'hrsh7th/nvim-compe'
+  Plug 'cespare/vim-toml'
 call plug#end()
