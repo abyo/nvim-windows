@@ -45,5 +45,6 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 source $VIMRUNTIME/mswin.vim            " Allows copy/paste on Windows
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
+let g:netrw_banner = 0                  " Removing netrw exlporer banner
 let g:netrw_fastbrowse = 0              " close netrw explore when opening a new file
 let g:mapleader = "\<Space>"

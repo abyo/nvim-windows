@@ -23,6 +23,7 @@ call plug#begin('~/AppData/Local/nvim/autoload/plugged')
   Plug 'mhinz/vim-startify'
   Plug 'mhinz/vim-signify'
   Plug 'neovim/nvim-lspconfig'
+  Plug 'wakatime/vim-wakatime'
   Plug 'andrewferrier/vim-wrapping-softhard'
   Plug 'hrsh7th/nvim-compe'
   Plug 'cespare/vim-toml'
