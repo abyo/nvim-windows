@@ -27,6 +27,7 @@ call plug#begin('~/AppData/Local/nvim/autoload/plugged')
   Plug 'andrewferrier/vim-wrapping-softhard'
   Plug 'hrsh7th/nvim-compe'
   Plug 'cespare/vim-toml'
+  Plug 'nvim-lua/completion-nvim'
   Plug 'sbdchd/neoformat'
   Plug 'tpope/vim-commentary'
 call plug#end()
