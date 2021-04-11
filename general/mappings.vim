@@ -23,9 +23,10 @@ nnoremap <M-l> :vertical resize +2<CR>
 nnoremap <TAB> :bnext<CR>
 nnoremap <S-TAB> :bprevious<CR>
 
+nnoremap <leader>b :Explore<CR>
 nnoremap <C-s> :w<CR>
 nnoremap <C-Q> :wq!<CR>
-nnoremap <C-w> :bd<CR>
+nnoremap <C-w> :bd!<CR>
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " Fzf
