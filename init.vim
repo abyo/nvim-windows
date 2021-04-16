@@ -81,3 +81,14 @@ let g:sneak#label = 1
 let g:sneak#use_ic_scs = 1
 let g:sneak#s_next = 1
 
+" ================ "
+"  BETTER COMMENT
+" ================ "
+
+hi AlertBetterComments guifg=#dc143c gui=bold
+hi QuestionBetterComments guifg=#0d66ff
+hi TodoBetterComments guifg=#ff8c00
+hi ParamBetterComments guifg=#dd80ff
+hi ExampleBetterComments guifg=#c0fc6d
+hi TypeBetterComments guifg=#dd80ff
+
