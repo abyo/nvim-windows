@@ -85,10 +85,10 @@ let g:sneak#s_next = 1
 "  BETTER COMMENT
 " ================ "
 
-hi AlertBetterComments guifg=#dc143c gui=bold
-hi QuestionBetterComments guifg=#0d66ff
+hi AlertBetterComments guifg=#ffffee guibg=#dc143c gui=bold
+hi QuestionBetterComments guifg=#8fff82
 hi TodoBetterComments guifg=#ff8c00
-hi ParamBetterComments guifg=#dd80ff
-hi ExampleBetterComments guifg=#c0fc6d
-hi TypeBetterComments guifg=#dd80ff
+hi ParamBetterComments guifg=#8293ff
+hi ExampleBetterComments guifg=#5269ff
+hi TypeBetterComments guifg=#8293ff
 
