@@ -20,7 +20,7 @@ call plug#begin('~/AppData/Local/nvim/autoload/plugged')
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
   Plug 'airblade/vim-rooter'
-  Plug 'jbgutierrez/vim-better-comments'
+  Plug 'abyo/vim-better-comments'
   Plug 'mhinz/vim-startify'
   Plug 'mhinz/vim-signify'
   Plug 'neovim/nvim-lspconfig'
