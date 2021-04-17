@@ -16,8 +16,9 @@ source $HOME/AppData/Local/nvim/general/mappings.vim
 source $HOME/AppData/Local/nvim/plug-config/fzf.vim
 source $HOME/AppData/Local/nvim/plug-config/project-start.vim
 
-luafile $HOME/AppData/Local/nvim/plug-config/compe.lua
-luafile $HOME/AppData/Local/nvim/plug-config/lsp.lua
+luafile $HOME/AppData/Local/nvim/lua/compe.lua
+luafile $HOME/AppData/Local/nvim/lua/lsp.lua
+luafile $HOME/AppData/Local/nvim/lua/lua-ls.lua
 
 " ================ "
 "   THEME CONFIG
