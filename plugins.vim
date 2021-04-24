@@ -22,13 +22,10 @@ call plug#begin('~/AppData/Local/nvim/autoload/plugged')
   Plug 'airblade/vim-rooter'
   Plug 'abyo/vim-better-comments'
   Plug 'mhinz/vim-startify'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'mhinz/vim-signify'
-  Plug 'neovim/nvim-lspconfig'
   Plug 'wakatime/vim-wakatime'
   Plug 'andrewferrier/vim-wrapping-softhard'
-  Plug 'hrsh7th/nvim-compe'
   Plug 'cespare/vim-toml'
-  Plug 'nvim-lua/completion-nvim'
-  Plug 'sbdchd/neoformat'
   Plug 'tpope/vim-commentary'
 call plug#end()

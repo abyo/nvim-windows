@@ -15,11 +15,7 @@ source $HOME/AppData/Local/nvim/general/settings.vim
 source $HOME/AppData/Local/nvim/general/mappings.vim
 source $HOME/AppData/Local/nvim/plug-config/fzf.vim
 source $HOME/AppData/Local/nvim/plug-config/project-start.vim
-source $HOME/AppData/Local/nvim/plug-config/lsp-config.vim
-
-luafile $HOME/AppData/Local/nvim/plug-config/compe.lua
-luafile $HOME/AppData/Local/nvim/lua/lsp.lua
-luafile $HOME/AppData/Local/nvim/lua/lua-ls.lua
+source $HOME/AppData/Local/nvim/plug-config/coc.vim
 
 " ================ "
 "   THEME CONFIG
@@ -59,10 +55,9 @@ let g:airline_theme = 'onedark'
 "   AUTO FORMAT 
 " =============== "
 
-augroup fmt
-  autocmd!
-  autocmd BufWritePre * undojoin | Neoformat
-augroup END
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+vmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
 
 " ================ "
 "    QUICKSCOPE
@@ -93,4 +88,5 @@ hi TodoBetterComments guifg=#c782ff
 hi ParamBetterComments guifg=#8293ff
 hi ExampleBetterComments guifg=#5269ff
 hi TypeBetterComments guifg=#8293ff
+hi HighlightBetterComments guifg=#ffd91c
 
