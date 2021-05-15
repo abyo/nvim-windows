@@ -29,8 +29,10 @@ end
 
 return require('packer').startup {
   function(use)
+    use {'wbthomason/packer.nvim', opt = true}
     use 'rstacruz/vim-closer'
     use 'tpope/vim-endwise'
     use 'wakatime/vim-wakatime'
+    use 'navarasu/onedark.nvim'
   end
 }

@@ -9,3 +9,5 @@
 --    `--' `--' `----'    `--'          `-----' 
 
 require 'lt.plugins'
+require 'lt.theme'
+
