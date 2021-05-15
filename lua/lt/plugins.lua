@@ -27,6 +27,8 @@ if not packer_exists then
   return
 end
 
+-- TODO: xd just testing
+
 return require('packer').startup {
   function(use)
     use {'wbthomason/packer.nvim', opt = true}
@@ -34,5 +36,23 @@ return require('packer').startup {
     use 'tpope/vim-endwise'
     use 'wakatime/vim-wakatime'
     use 'navarasu/onedark.nvim'
+
+    use {
+      'folke/todo-comments.nvim',
+      requires = 'nvim-lua/plenary.nvim',
+      config = function() require('todo-comments').setup{} end
+    }
+
+    use {
+      'folke/trouble.nvim',
+      requires = 'kyazdani42/nvim-web-devicons',
+      config = function() require('trouble').setup{} end
+    }
+
+    use {
+      'nvim-telescope/telescope.nvim',
+      requires = {{ 'nvim-lua/popup.nvim' }, { 'nvim-lua/plenary.nvim' }},
+      config = function() require('telescope').setup{} end
+    }
   end
 }
