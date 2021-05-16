@@ -31,7 +31,7 @@ end
 
 return require('packer').startup {
   function(use)
-    use {'wbthomason/packer.nvim', opt = true}
+    use { 'wbthomason/packer.nvim', opt = true }
     use 'rstacruz/vim-closer'
     use 'tpope/vim-endwise'
     use 'wakatime/vim-wakatime'
@@ -54,5 +54,7 @@ return require('packer').startup {
       requires = {{ 'nvim-lua/popup.nvim' }, { 'nvim-lua/plenary.nvim' }},
       config = function() require('telescope').setup{} end
     }
+
+    -- use 'jeffkreeftmeijer/vim-numbertoggle' (number/relativenumber -> https://github.com/jeffkreeftmeijer/vim-numbertoggle)
   end
 }
