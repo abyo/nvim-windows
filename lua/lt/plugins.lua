@@ -27,7 +27,7 @@ if not packer_exists then
   return
 end
 
--- TODO: xd just testing
+vim.g.mapleader = ' '
 
 return require('packer').startup {
   function(use)
