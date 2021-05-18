@@ -39,12 +39,12 @@ A quick reminder:
 ---
 
 - [Mappings](#mappings)
-  * [Default [1000](#default-1000)
-  * [Kommentary [1001](#kommentary-1001)
+  * [Default [1000]](#default-1000)
+  * [Kommentary [1001]](#kommentary-1001)
 
 ---
 
-## Default [1000]
+## Default [1000] ([back to top](#mappings))
 
 [Access file](/lua/lt/defaults/remaps.lua)
 
@@ -67,7 +67,7 @@ A quick reminder:
 
 \* Probably needs the plenary plugin to work
 
-## Kommentary [1001]
+## Kommentary [1001] ([back to top](#mappings))
 
 [Access file](/lua/lt/kommentary/remaps.lua)
 
