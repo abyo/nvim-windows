@@ -36,6 +36,13 @@ A quick reminder:
 
 **The leader key can be changed in the [plugin.lua](/lua/lt/plugins.lua) file.**
 
+---
+
+[Default](#default-1000)
+[Kommentary](#kommentary-1001)
+
+---
+
 ## Default [1000]
 
 |      Mode     |        Mapping       |                   Description                  |
@@ -56,3 +63,14 @@ A quick reminder:
 |     Insert    |       jk/kj/jj       |           Fast escape in insert mode           |
 
 \* Probably needs the plenary plugin to work
+
+## Kommentary [1001]
+
+```bash
+use 'b3nj5m1n/kommentary'
+```
+
+|  Mode  | Mapping |        Description       |
+|:------:|:-------:|:------------------------:|
+| Normal |   gcc   |   Comment current line   |
+| Visual |    gc   | Comment visual selection |

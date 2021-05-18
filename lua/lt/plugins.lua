@@ -36,6 +36,7 @@ return require('packer').startup {
     use 'tpope/vim-endwise'
     use 'wakatime/vim-wakatime'
     use 'navarasu/onedark.nvim'
+    use 'b3nj5m1n/kommentary'
 
     use {
       'folke/todo-comments.nvim',
