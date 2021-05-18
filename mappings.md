@@ -10,6 +10,8 @@
  `--'   `--'  `--' `--'`--'      `--'      `--'   `--'  `--'   `------'   `-----'  
 -->
 
+# Mappings
+
 My mappings are separated into `remaps.lua` files, they can be found into different
 plugins folder. If you're looking for `telescope` mappings or the `default` ones,
 you don't have to go and look for them, just use the table of content below then
@@ -43,10 +45,14 @@ A quick reminder:
 |     Normal    |          C-q         |         Saving and leaving current file        |
 |     Normal    |       C-h/j/k/l      | Moving between windows (left/bottom/top/right) |
 |     Normal    | C-Up/Down/Right/Left |    Resizing windows (top/bottom/right/left)    |
+|     Normal    |       tab/s-tab      |             Moving between buffers             |
 |    Terminal   |       Leader-jj      |              Escape terminal mode              |
 |     Visual    |          C-c         |                      Copy                      |
 | Normal/Insert |          C-v         |                      Paste                     |
 |     Visual    |          J/K         |          Move a selected line up/down          |
+|     Visual    |       tab/s-tab      |                    Indenting                   |
 |     Normal    |       Leader-db      |      Close all buffers except current one      |
+|     Visual    |           d          |          Delete a line in visual mode          |
+|     Insert    |       jk/kj/jj       |           Fast escape in insert mode           |
 
-* Probably needs the plenary plugin to work
+\* Probably needs the plenary plugin to work
