@@ -38,8 +38,9 @@ A quick reminder:
 
 ---
 
-[Default](#default-1000)
-[Kommentary](#kommentary-1001)
+- [Mappings](#mappings)
+  * [Default [1000](#default-1000)
+  * [Kommentary [1001](#kommentary-1001)
 
 ---
 
