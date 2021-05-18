@@ -1,5 +1,7 @@
 local opt = require'lt.utils.functions'.opt
 
+vim.g.mapleader = ' '
+
 opt('wo', 'number', true)                -- Show absolute line number
 opt('wo', 'relativenumber', true)        -- Show line number relative to the cursor's current position
 opt('wo', 'cursorline', true)            -- Highlight line on cursor's position

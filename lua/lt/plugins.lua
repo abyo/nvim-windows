@@ -27,8 +27,6 @@ if not packer_exists then
   return
 end
 
-vim.g.mapleader = ' '
-
 return require('packer').startup {
   function(use)
     use { 'wbthomason/packer.nvim', opt = true }

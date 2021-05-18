@@ -45,6 +45,8 @@ A quick reminder:
 
 ## Default [1000]
 
+[Access file](/lua/lt/defaults/remaps.lua)
+
 |      Mode     |        Mapping       |                   Description                  |
 |:-------------:|:--------------------:|:----------------------------------------------:|
 |     Normal    |     Leader-Enter     |            Reload current lua file*            |
@@ -66,11 +68,13 @@ A quick reminder:
 
 ## Kommentary [1001]
 
+[Access file](/lua/lt/kommentary/remaps.lua)
+
 ```bash
 use 'b3nj5m1n/kommentary'
 ```
 
-|  Mode  | Mapping |        Description       |
-|:------:|:-------:|:------------------------:|
-| Normal |   gcc   |   Comment current line   |
-| Visual |    gc   | Comment visual selection |
+|  Mode  |  Mapping |        Description       |
+|:------:|:--------:|:------------------------:|
+| Normal | Leader-c |   Comment current line   |
+| Visual | Leader-c | Comment visual selection |

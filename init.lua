@@ -11,3 +11,4 @@
 require 'lt.defaults'
 require 'lt.plugins'
 require 'lt.theme'
+require 'lt.kommentary'
