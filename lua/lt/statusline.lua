@@ -29,6 +29,7 @@ require'lualine'.setup {
 -- Buffer line
 vim.cmd("let bufferline = get(g:, 'bufferline', {})")
 vim.cmd('let bufferline.maximum_padding = 1')
+vim.cmd('let bufferline.animation = v:false')
 
 --[[ require('bufferline').setup {
   options = {

@@ -25,8 +25,9 @@ keymap('n', '<C-Right>', ':vertical resize -2<CR>')
 keymap('n', '<C-Left>', ':vertical resize +2<CR>')
 
 -- Moving between buffers
-keymap('n', '<tab>', ':bnext<CR>')
-keymap('n', '<s-tab>', ':bprevious<CR>')
+keymap('n', '<tab>', ':BufferNext<CR>')
+keymap('n', '<s-tab>', ':BufferPrevious<CR>')
+keymap('n', '<C-w>', ':BufferClose<CR>')
 
 -- Escaping in terminal mode
 keymap('t', '<Leader>jj', '<C-\\><C-n>')
@@ -46,8 +47,6 @@ keymap('x', '<tab>', '>gv')
 
 -- Close all buffers except current one
 keymap('n', '<Leader>db', ':silent w <BAR> :silent %bd <BAR> e#<CR>')
--- Close current buffer
-keymap('n', '<C-w>', ':bdelete<CR>')
 
 -- Delete line in visual
 keymap('x', 'd', '"_d')
