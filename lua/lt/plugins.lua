@@ -33,7 +33,7 @@ return require('packer').startup {
     use 'rstacruz/vim-closer'
     use 'tpope/vim-endwise'
     use 'wakatime/vim-wakatime'
-    use 'navarasu/onedark.nvim'
+    use 'joshdick/onedark.vim'
     use 'b3nj5m1n/kommentary'
 
     use {
@@ -55,5 +55,9 @@ return require('packer').startup {
     }
 
     -- use 'jeffkreeftmeijer/vim-numbertoggle' (number/relativenumber -> https://github.com/jeffkreeftmeijer/vim-numbertoggle)
+    use 'tpope/vim-rhubarb'
+    use 'tpope/vim-fugitive'
+    use 'junegunn/gv.vim'
+    use 'lewis6991/gitsigns.nvim'
   end
 }

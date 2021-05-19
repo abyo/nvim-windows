@@ -34,7 +34,8 @@ A quick reminder:
 - `M` is `ALT`
 - `Leader` is the space bar
 
-**The leader key can be changed in the [plugin.lua](/lua/lt/plugins.lua) file.**
+**The leader key can be changed in the [settings.lua](/lua/lt/defaults/settings.lua) file
+which can be found in the default folder.**
 
 ---
 
@@ -50,7 +51,7 @@ A quick reminder:
 
 |      Mode     |        Mapping       |                   Description                  |
 |:-------------:|:--------------------:|:----------------------------------------------:|
-|     Normal    |     Leader-Enter     |            Reload current lua file*            |
+|     Normal    |     Leader-Enter     |            Reload current lua file²            |
 | Normal/Insert |          C-s         |               Saving current file              |
 |     Normal    |          C-q         |         Saving and leaving current file        |
 |     Normal    |       C-h/j/k/l      | Moving between windows (left/bottom/top/right) |
@@ -62,10 +63,11 @@ A quick reminder:
 |     Visual    |          J/K         |          Move a selected line up/down          |
 |     Visual    |       tab/s-tab      |                    Indenting                   |
 |     Normal    |       Leader-db      |      Close all buffers except current one      |
+|     Normal    |          C-w         |              Close current buffer              |
 |     Visual    |           d          |          Delete a line in visual mode          |
 |     Insert    |       jk/kj/jj       |           Fast escape in insert mode           |
 
-\* Probably needs the plenary plugin to work
+²: Probably needs the plenary plugin to work
 
 ## Kommentary ([back to top](#mappings))
 
@@ -79,3 +81,23 @@ use 'b3nj5m1n/kommentary'
 |:------:|:--------:|:------------------------:|
 | Normal | Leader-c |   Comment current line   |
 | Visual | Leader-c | Comment visual selection |
+
+## Git ([back to top](#mappings))
+
+[Access file](/lua/lt/git/remaps.lua)
+
+```bash
+use 'tpope/vim-rhubarb'
+use 'tpope/vim-fugitive'
+use 'junegunn/gv.vim'
+use 'lewis6991/gitsigns.nvim' 
+```
+
+|  Mode  |   Mapping  | Description |
+|:------:|:----------:|:-----------:|
+| Normal |  Leader-gs | ~Git Status |
+| Normal |  Leader-ga |  Git add .  |
+| Normal |  Leader-gl |   Git log   |
+| Normal |  Leader-gc |  Git commit |
+| Normal | Leader-gph |   Git push  |
+| Normal | Leader-gpl |   Git pull  |

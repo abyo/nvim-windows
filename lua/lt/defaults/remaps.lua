@@ -8,6 +8,7 @@ keymap('', '<c-s>', ':w<CR>', { noremap = false })
 keymap('i', '<c-s>', '<C-o>:w<CR>', { noremap = false })
 keymap('n', '<c-s>', ':w<CR>', { noremap = false })
 keymap('n', '<c-q>', ':wq!<CR>', { noremap = false })
+keymap('n', '<c-Q>', ':q!<CR>', { noremap = false })
 
 -- Moving between slits
 keymap('n', '<c-h>', '<C-w>h')
@@ -45,6 +46,8 @@ keymap('x', '<tab>', '>gv')
 
 -- Close all buffers except current one
 keymap('n', '<Leader>db', ':silent w <BAR> :silent %bd <BAR> e#<CR>')
+-- Close current buffer
+keymap('n', '<C-w>', ':bdelete<CR>')
 
 -- Delete line in visual
 keymap('x', 'd', '"_d')

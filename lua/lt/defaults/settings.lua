@@ -15,6 +15,7 @@ opt('o', 'mouse', 'a')                   -- Enable the mouse
 opt('o', 'showmatch', true)              -- Briefly jump to the matching bracket
 opt('o', 'matchtime', 0)                 -- Tenths of a second to show the matching paren
 opt('o', 'ttimeoutlen', 0)               -- Time in ms to wait for a key code sequence to complete
+opt('o', 'termguicolors', true)          -- Check if terminal has 24-bit color support
 opt('o', 'fileencoding', 'utf-8')        -- Encoding written to a file
 opt('o', 'listchars', 'tab:│ ,trail:·')  -- Strings to use in 'list' mode and :list command
 opt('o', 'list', true)                   -- Activate 'list' mode
