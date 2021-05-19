@@ -14,6 +14,9 @@ opt('o', 'ignorecase', true)             -- Ignore case when pattern contains lo
 opt('o', 'mouse', 'a')                   -- Enable the mouse
 opt('o', 'showmatch', true)              -- Briefly jump to the matching bracket
 opt('o', 'matchtime', 0)                 -- Tenths of a second to show the matching paren
+opt('o', 'showtabline', 2)               -- Always show tabs
+opt('o', 'tabstop', 2)                   -- Insert 2 spaces for a tab
+opt('o', 'background', 'dark')           -- Tells vim that the background is dark
 opt('o', 'ttimeoutlen', 0)               -- Time in ms to wait for a key code sequence to complete
 opt('o', 'termguicolors', true)          -- Check if terminal has 24-bit color support
 opt('o', 'fileencoding', 'utf-8')        -- Encoding written to a file

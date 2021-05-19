@@ -55,9 +55,18 @@ return require('packer').startup {
     }
 
     -- use 'jeffkreeftmeijer/vim-numbertoggle' (number/relativenumber -> https://github.com/jeffkreeftmeijer/vim-numbertoggle)
+
+    -- Git
     use 'tpope/vim-rhubarb'
     use 'tpope/vim-fugitive'
     use 'junegunn/gv.vim'
     use 'lewis6991/gitsigns.nvim'
+
+    -- Status/buffer line
+    use 'hoob3rt/lualine.nvim'
+    use 'romgrk/barbar.nvim'
+    -- TODO: Move to galaxyline/bufferline for custom status line whenever lsp is added
+    -- use 'glepnir/galaxyline.nvim'
+    -- use 'akinsho/nvim-bufferline.lua'
   end
 }
