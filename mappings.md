@@ -116,3 +116,16 @@ use 'glepnir/dashboard-nvim'
 |:------:|:---------:|:------------:|
 | Normal | Leader-ss | Save Session |
 | Normal | Leader-sl | Load Session |
+
+## Undotree ([back to top](#mappings))
+
+[Access file](/lua/lt/undotree/remaps.lua)
+
+```bash
+use 'mbbill/undotree'
+```
+
+|  Mode  |   Mapping  |  Description  |
+|:------:|:----------:|:-------------:|
+| Normal | Leader-uts | Show Undotree |
+| Normal | Leader-uth | Hide Undotree |

@@ -34,6 +34,7 @@ return require('packer').startup {
     use 'tpope/vim-endwise'
     use 'wakatime/vim-wakatime'
     use 'b3nj5m1n/kommentary'
+    use 'mbbill/undotree'
 
     use {
       'folke/todo-comments.nvim',
