@@ -1,6 +1,6 @@
--- Only required if you have packer in your `opt` pack
 local packer_exists = pcall(vim.cmd, [[packadd packer.nvim]])
 
+-- Check if packer exist 
 if not packer_exists then
   if vim.fn.input("Download Packer? (y for yes)") ~= "y" then
     return
@@ -33,7 +33,6 @@ return require('packer').startup {
     use 'rstacruz/vim-closer'
     use 'tpope/vim-endwise'
     use 'wakatime/vim-wakatime'
-    use 'joshdick/onedark.vim'
     use 'b3nj5m1n/kommentary'
 
     use {
@@ -54,7 +53,9 @@ return require('packer').startup {
       config = function() require('telescope').setup{} end
     }
 
-    -- use 'jeffkreeftmeijer/vim-numbertoggle' (number/relativenumber -> https://github.com/jeffkreeftmeijer/vim-numbertoggle)
+    -- Fixes
+    use 'antoinemadec/FixCursorHold.nvim'    -- Cursorhold
+    use 'jeffkreeftmeijer/vim-numbertoggle'  -- Absolute line numbers when window not focused
 
     -- Git
     use 'tpope/vim-rhubarb'
@@ -62,7 +63,8 @@ return require('packer').startup {
     use 'junegunn/gv.vim'
     use 'lewis6991/gitsigns.nvim'
 
-    -- Status/buffer line
+    -- Theme/status/buffer line
+    use 'joshdick/onedark.vim'
     use 'hoob3rt/lualine.nvim'
     use 'romgrk/barbar.nvim'
     -- TODO: Move to galaxyline/bufferline for custom status line whenever lsp is added
