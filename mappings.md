@@ -42,6 +42,8 @@ which can be found in the default folder.**
 - [Mappings](#mappings)
   * [Default](#default-back-to-top)
   * [Kommentary](#kommentary-back-to-top)
+  * [Git](#git-back-to-top)
+  * [Dashboard](#dashboard-back-to-top)
 
 ---
 
@@ -101,3 +103,16 @@ use 'lewis6991/gitsigns.nvim'
 | Normal |  Leader-gc |  Git commit |
 | Normal | Leader-gph |   Git push  |
 | Normal | Leader-gpl |   Git pull  |
+
+## Dashboard ([back to top](#mappings))
+
+[Access file](/lua/lt/dashboard/remaps.lua)
+
+```bash
+use 'glepnir/dashboard-nvim'
+```
+
+|  Mode  |  Mapping  |  Description |
+|:------:|:---------:|:------------:|
+| Normal | Leader-ss | Save Session |
+| Normal | Leader-sl | Load Session |

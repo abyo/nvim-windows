@@ -70,5 +70,8 @@ return require('packer').startup {
     -- TODO: Move to galaxyline/bufferline for custom status line whenever lsp is added
     -- use 'glepnir/galaxyline.nvim'
     -- use 'akinsho/nvim-bufferline.lua'
+
+    -- Starter screen
+    use 'glepnir/dashboard-nvim'
   end
 }
