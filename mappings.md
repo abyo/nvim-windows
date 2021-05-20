@@ -39,11 +39,12 @@ which can be found in the default folder.**
 
 ---
 
-- [Mappings](#mappings)
-  * [Default](#default-back-to-top)
-  * [Kommentary](#kommentary-back-to-top)
-  * [Git](#git-back-to-top)
-  * [Dashboard](#dashboard-back-to-top)
+- [Default](#default-back-to-top)
+- [Kommentary](#kommentary-back-to-top)
+- [Git](#git-back-to-top)
+- [Dashboard](#dashboard-back-to-top)
+- [Undotree](#undotree-back-to-top)
+- [Indent Guides](#indent-guides-back-to-top)
 
 ---
 
@@ -129,3 +130,18 @@ use 'mbbill/undotree'
 |:------:|:----------:|:-------------:|
 | Normal | Leader-uts | Show Undotree |
 | Normal | Leader-uth | Hide Undotree |
+
+
+## Indent Guides ([back to top](#mappings))
+
+[Access file](/lua/lt/indent-guides/remaps.lua)
+
+```bash
+use 'glepnir/indent-guides.nvim'
+```
+
+|  Mode  |  Mapping  |      Description      |
+|:------:|:---------:|:---------------------:|
+| Normal | Leader-it |  Toggle Indent Guides |
+| Normal | Leader-ie |  Enable Indent Guides |
+| Normal | Leader-id | Disable Indent Guides |
