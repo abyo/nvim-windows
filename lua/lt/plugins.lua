@@ -35,6 +35,7 @@ return require('packer').startup {
     use 'wakatime/vim-wakatime'
     use 'b3nj5m1n/kommentary'
     use 'mbbill/undotree'
+    use 'justinmk/vim-sneak'
     use 'glepnir/indent-guides.nvim'
 
     use {

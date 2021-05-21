@@ -8,6 +8,7 @@
 --    |  | |  |\  `'  / `-./  /.__)   `'  '-'  '
 --    `--' `--' `----'    `--'          `-----' 
 
+-- TODO: Move single file plugin to a folder
 require 'lt.defaults'
 require 'lt.plugins'
 require 'lt.theme'
