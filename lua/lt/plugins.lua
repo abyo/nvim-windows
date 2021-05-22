@@ -76,5 +76,9 @@ return require('packer').startup {
 
     -- Starter screen
     use 'glepnir/dashboard-nvim'
+
+    -- Fuzzy finder
+    use 'junegunn/fzf'
+    use 'junegunn/fzf.vim'
   end
 }
