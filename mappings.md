@@ -145,3 +145,28 @@ use 'glepnir/indent-guides.nvim'
 | Normal | Leader-it |  Toggle Indent Guides |
 | Normal | Leader-ie |  Enable Indent Guides |
 | Normal | Leader-id | Disable Indent Guides |
+
+
+## Fzf ([back to top](#mappings))
+
+[Access file](/lua/lt/fzf/remaps.lua)
+
+```bash
+use 'junegunn/fzf'
+use 'junegunn/fzf.vim' 
+```
+
+You also need fzf and ripgrep on your PC. On Windows,
+you can use [scoop](https://scoop.sh/)
+
+```bash
+scoop install ripgrep fzf
+```
+
+|  Mode  |  Mapping  |             Description             |
+|:------:|:---------:|:-----------------------------------:|
+| Normal | Leader-gf |        Search into git files        |
+| Normal |  Leader-p |       Search a file in project      |
+| Normal | Leader-bu |     Switch onto specific buffer     |
+| Normal |  Leader-f | Search for specific line in project |
+| Normal |    C-f    |   Search for specific line in file  |

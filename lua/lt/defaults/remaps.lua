@@ -1,5 +1,6 @@
 local keymap = require 'lt.utils.functions'.keymap
 
+-- TODO: Change c to C in ctrl mappings
 -- Reloading lua file
 keymap('n', '<Leader><CR>', '<cmd>lua reload()<CR>')
 
