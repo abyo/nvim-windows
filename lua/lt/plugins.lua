@@ -37,6 +37,7 @@ return require('packer').startup {
     use 'mbbill/undotree'
     use 'justinmk/vim-sneak'
     use 'glepnir/indent-guides.nvim'
+    use 'norcalli/nvim-colorizer.lua'
 
     use {
       'folke/todo-comments.nvim',
