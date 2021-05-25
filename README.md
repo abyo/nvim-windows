@@ -11,8 +11,10 @@ It doesn't have to be! Just install everything you need with [WinLua](http://win
 
 ## Plugins
 
-The plugin manager I'm using is [packer](https://github.com/bfredl/packer.nvim/)
+The plugin manager I'm using is [packer](https://github.com/bfredl/packer.nvim/).
 Here's a list of all plugins I'm using for the config:
+
+<!-- TODO: Remove use and add more comments -->
 
 ```lua
 use { 'wbthomason/packer.nvim', opt = true }
@@ -26,6 +28,7 @@ use 'glepnir/indent-guides.nvim'  -- Indenting
 use 'norcalli/nvim-colorizer.lua' -- Add preview colors
 use 'psliwka/vim-smoothie'        -- Smoother scrolling (C-d/C-f)
 use 'rrethy/vim-illuminate'       -- Highlight matching words w/ cursor on it
+use 'terryma/vim-expand-region'   -- Expand selection
 
 -- Lists
 use 'folke/todo-comments.nvim'
@@ -60,9 +63,11 @@ use 'junegunn/fzf.vim'
 use 'nvim-telescope/telescope.nvim'
 ```
 
+If you have any suggestions, don't hesitate.
+
 ## Mappings
 
-You can find all mappings in the [mapping file.](mappings.md). Each mappings has a different
+You can find all mappings in the [mapping file](mappings.md). Each mappings has a different
 file for it. You can find them in their respective plugins (there's a link to them in the
 mapping file too).
 
