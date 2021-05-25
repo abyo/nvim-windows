@@ -2,11 +2,16 @@
 
 Migrating to LUA in progress.
 
+## ToDo
+
+## Plugins
+
 ## Mappings
 
 You can find all mappings in the [mapping file.](mappings.md)
 
-## LUA support (optionnal)
+## How to install LUA on Windows 10
 
-If you want to work with LUA, you just need luarocks and lua for it to work. On windows, installing luarocks is pretty confusing. To make it easier, install both of them with [WinLua](http://winlua.net/).
+If you want to work with LUA on Windows, it's pretty confusing. 
+It doesn't have to be! Just install everything you need with [WinLua](http://winlua.net/).
 

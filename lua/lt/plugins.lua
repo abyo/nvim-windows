@@ -32,12 +32,13 @@ return require('packer').startup {
     use { 'wbthomason/packer.nvim', opt = true }
     use 'rstacruz/vim-closer'
     use 'tpope/vim-endwise'
-    use 'wakatime/vim-wakatime'
-    use 'b3nj5m1n/kommentary'
-    use 'mbbill/undotree'
-    use 'justinmk/vim-sneak'
-    use 'glepnir/indent-guides.nvim'
-    use 'norcalli/nvim-colorizer.lua'
+    use 'wakatime/vim-wakatime'       -- Coding Tracker
+    use 'b3nj5m1n/kommentary'         -- Fast Commentary
+    use 'mbbill/undotree'             -- Show tree history
+    use 'justinmk/vim-sneak'          -- Better sneak
+    use 'glepnir/indent-guides.nvim'  -- Indenting
+    use 'norcalli/nvim-colorizer.lua' -- Add preview colors
+    use 'psliwka/vim-smoothie'        -- Smoother scrolling (C-d/C-f)
 
     use {
       'folke/todo-comments.nvim',

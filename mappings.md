@@ -45,6 +45,7 @@ which can be found in the default folder.**
 - [Dashboard](#dashboard-back-to-top)
 - [Undotree](#undotree-back-to-top)
 - [Indent Guides](#indent-guides-back-to-top)
+- [Fzf](#fzf-back-to-top)
 
 ---
 
