@@ -41,7 +41,6 @@ return require('packer').startup {
     use 'psliwka/vim-smoothie'        -- Smoother scrolling (C-d/C-f)
     use 'rrethy/vim-illuminate'       -- Highlight matching words w/ cursor on it
     use 'terryma/vim-expand-region'   -- Expand selection (+/_)
-    use 'AndrewRadev/splitjoin.vim'   -- Single/multi-line forms of code (gS/gJ)
     use 'kyazdani42/nvim-tree.lua'    -- File Tree
 
     use {
@@ -86,9 +85,5 @@ return require('packer').startup {
     -- Fuzzy finder
     use 'junegunn/fzf'
     use 'junegunn/fzf.vim'
-
-    -- Snippets
-    use 'hrsh7th/vim-vsnip'
-    use 'hrsh7th/vim-vsnip-integ'
-  end
+ end
 }

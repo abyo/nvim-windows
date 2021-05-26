@@ -29,7 +29,6 @@ use 'norcalli/nvim-colorizer.lua' -- Add preview colors
 use 'psliwka/vim-smoothie'        -- Smoother scrolling (C-d/C-f)
 use 'rrethy/vim-illuminate'       -- Highlight matching words w/ cursor on it
 use 'terryma/vim-expand-region'   -- Expand selection
-use 'AndrewRadev/splitjoin.vim'   -- Single/multi-line forms of code (gS/gJ)
 use 'kyazdani42/nvim-tree.lua'    -- File Tree
 
 -- Lists
