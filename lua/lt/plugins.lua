@@ -85,5 +85,9 @@ return require('packer').startup {
     -- Fuzzy finder
     use 'junegunn/fzf'
     use 'junegunn/fzf.vim'
+
+    -- Snippets
+    use 'hrsh7th/vim-vsnip'
+    use 'hrsh7th/vim-vsnip-integ'
   end
 }
