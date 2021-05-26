@@ -11,6 +11,7 @@ vim.g.nvim_tree_show_icons = {
 
 vim.g.nvim_tree_bindings = {
   create =          'a',
+  refresh =         't',
   remove =          'd',
   rename =          'r',
   cut =             'x',
