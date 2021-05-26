@@ -85,5 +85,5 @@ return require('packer').startup {
     -- Fuzzy finder
     use 'junegunn/fzf'
     use 'junegunn/fzf.vim'
- end
+end
 }

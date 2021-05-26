@@ -9,6 +9,11 @@ It doesn't have to be! Just install everything you need with [WinLua](http://win
 
 ## ToDo
 
+- [x] Add more information on the README file
+- [] Add Linters & Autocompletion
+- [] Snippets integration
+- [] Fix sessions loading/saving
+
 ## Plugins
 
 The plugin manager I'm using is [packer](https://github.com/bfredl/packer.nvim/).
