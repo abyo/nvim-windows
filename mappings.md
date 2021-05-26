@@ -46,6 +46,7 @@ which can be found in the default folder.**
 - [Undotree](#undotree-back-to-top)
 - [Indent Guides](#indent-guides-back-to-top)
 - [Fzf](#fzf-back-to-top)
+- [FileTree](#filetree-back-to-top)
 
 ---
 
@@ -171,3 +172,15 @@ scoop install ripgrep fzf
 | Normal | Leader-bu |     Switch onto specific buffer     |
 | Normal |  Leader-f | Search for specific line in project |
 | Normal |    C-f    |   Search for specific line in file  |
+
+## FileTree ([back to top](#mappings))
+
+[Access file](/lua/lt/filetree/remaps.lua)
+
+```bash
+use 'kyazdani42/nvim-tree.lua'
+```
+
+|  Mode  | Mapping |   Description    |
+|:------:|:-------:|:----------------:|
+| Normal |   C-b   |  Show file Tree  |

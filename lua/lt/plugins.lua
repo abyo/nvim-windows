@@ -42,6 +42,7 @@ return require('packer').startup {
     use 'rrethy/vim-illuminate'       -- Highlight matching words w/ cursor on it
     use 'terryma/vim-expand-region'   -- Expand selection (+/_)
     use 'AndrewRadev/splitjoin.vim'   -- Single/multi-line forms of code (gS/gJ)
+    use 'kyazdani42/nvim-tree.lua'    -- File Tree
 
     use {
       'folke/todo-comments.nvim',

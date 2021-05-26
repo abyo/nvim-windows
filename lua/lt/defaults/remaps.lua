@@ -56,6 +56,3 @@ keymap('x', 'd', '"_d')
 keymap('i', 'jk', '<ESC>')
 keymap('i', 'kj', '<ESC>')
 keymap('i', 'jj', '<ESC>')
-
--- Open netrw
-keymap('n', '<C-b>', ':Explore<CR>')
