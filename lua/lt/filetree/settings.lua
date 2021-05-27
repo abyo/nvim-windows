@@ -1,4 +1,4 @@
-vim.g.nvim_tree_width = 90
+vim.g.nvim_tree_width = 30
 vim.g.nvim_tree_git_hl = 0
 vim.g.nvim_tree_quit_on_open = 1
 vim.g.nvim_tree_follow  = 1
@@ -9,13 +9,10 @@ vim.g.nvim_tree_show_icons = {
   files = 1,
 }
 
+-- Changing tree bindings (https://github.com/kyazdani42/nvim-tree.lua#keybindings)
+
+--[[ local tree_cb = require'nvim-tree.config'.nvim_tree_callback
+
 vim.g.nvim_tree_bindings = {
-  create =          'a',
-  refresh =         't',
-  remove =          'd',
-  rename =          'r',
-  cut =             'x',
-  copy =            'c',
-  paste =           'p',
-  close =           'q'
-}
+  ["R"] = tree_cb("refresh")
+} ]]
