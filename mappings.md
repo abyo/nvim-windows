@@ -47,6 +47,7 @@ which can be found in the default folder.**
 - [Indent Guides](#indent-guides-back-to-top)
 - [Fzf](#fzf-back-to-top)
 - [FileTree](#filetree-back-to-top)
+- [Terminal](#terminal-back-to-top)
 
 ---
 
@@ -184,3 +185,13 @@ use 'kyazdani42/nvim-tree.lua'
 |  Mode  | Mapping |   Description    |
 |:------:|:-------:|:----------------:|
 | Normal |   C-b   |  Show file Tree  |
+
+
+## Terminal ([back to top](#mappings))
+
+[Access file](/lua/lt/terminal/remaps.lua)
+
+|   Mode   |  Mapping |      Description     |
+|:--------:|:--------:|:--------------------:|
+|  Normal  | Leader-t | Toggle/hide terminal |
+| Terminal | Leader-t | Toggle/hide terminal |

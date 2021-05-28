@@ -42,6 +42,7 @@ return require('packer').startup {
     use 'terryma/vim-expand-region'   -- Expand selection (+/_)
     use 'kyazdani42/nvim-tree.lua'    -- File Tree
     use { 'lukas-reineke/indent-blankline.nvim', branch = 'lua' }
+    use 'akinsho/nvim-toggleterm.lua'
 
     use {
       'folke/todo-comments.nvim',
@@ -60,6 +61,7 @@ return require('packer').startup {
       requires = {{ 'nvim-lua/popup.nvim' }, { 'nvim-lua/plenary.nvim' }},
       config = function() require('telescope').setup{} end
     }
+
 
     -- Fixes
     use 'antoinemadec/FixCursorHold.nvim'    -- Cursorhold
