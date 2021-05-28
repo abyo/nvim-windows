@@ -41,6 +41,7 @@ return require('packer').startup {
     use 'rrethy/vim-illuminate'       -- Highlight matching words w/ cursor on it
     use 'terryma/vim-expand-region'   -- Expand selection (+/_)
     use 'kyazdani42/nvim-tree.lua'    -- File Tree
+    use { 'lukas-reineke/indent-blankline.nvim', branch = 'lua' }
 
     use {
       'folke/todo-comments.nvim',
