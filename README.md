@@ -17,6 +17,7 @@ It doesn't have to be! Just install everything you need with [WinLua](http://win
 - [ ] Snippets integration
 - [ ] Fix sessions loading/saving
 - [ ] Finish generic config
+- [ ] Terminal integration
 
 ## Mappings
 

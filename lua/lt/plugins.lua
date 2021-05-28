@@ -36,13 +36,11 @@ return require('packer').startup {
     use 'b3nj5m1n/kommentary'         -- Fast Commentary
     use 'mbbill/undotree'             -- Show tree history
     use 'justinmk/vim-sneak'          -- Better sneak
-    use 'glepnir/indent-guides.nvim'  -- Indenting
     use 'norcalli/nvim-colorizer.lua' -- Add preview colors
     use 'psliwka/vim-smoothie'        -- Smoother scrolling (C-d/C-f)
     use 'rrethy/vim-illuminate'       -- Highlight matching words w/ cursor on it
     use 'terryma/vim-expand-region'   -- Expand selection (+/_)
     use 'kyazdani42/nvim-tree.lua'    -- File Tree
-    use 'andweeb/presence.nvim'       -- Discord Presence
 
     use {
       'folke/todo-comments.nvim',
