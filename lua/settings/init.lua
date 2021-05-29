@@ -1,4 +1,9 @@
-local opt = require'lt.utils.functions'.opt
+function opt(scope, key, value)
+  vim[scope][key] = value
+  if scope ~= 'o' then
+    vim['o'][key] = value
+  end
+end
 
 vim.g.mapleader = ' '
 
@@ -49,5 +54,6 @@ opt('o', 'clipboard', 'unnamedplus')     -- Copy paste between vim and everythin
 
 -- Option settings for diff mode
 opt('o', 'diffopt', vim.o.diffopt..',vertical')
+
 -- Program to use for the :grep command (may need ripgrep installed on the machine to work)
 opt('o', 'grepprg', 'rg --smart-case --color=never --no-heading -H -n --column')

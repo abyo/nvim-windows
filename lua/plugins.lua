@@ -30,6 +30,7 @@ end
 return require('packer').startup {
   function(use)
     use { 'wbthomason/packer.nvim', opt = true }
+    use 'kyazdani42/nvim-web-devicons'
     use 'rstacruz/vim-closer'
     use 'tpope/vim-endwise'
     use 'wakatime/vim-wakatime'       -- Coding Tracker
@@ -37,11 +38,9 @@ return require('packer').startup {
     use 'mbbill/undotree'             -- Show tree history
     use 'justinmk/vim-sneak'          -- Better sneak
     use 'norcalli/nvim-colorizer.lua' -- Add preview colors
-    use 'psliwka/vim-smoothie'        -- Smoother scrolling (C-d/C-f)
-    use 'rrethy/vim-illuminate'       -- Highlight matching words w/ cursor on it
-    use 'terryma/vim-expand-region'   -- Expand selection (+/_)
     use 'kyazdani42/nvim-tree.lua'    -- File Tree
     use { 'lukas-reineke/indent-blankline.nvim', branch = 'lua' }
+    use 'jeffkreeftmeijer/vim-numbertoggle'  -- Absolute line numbers when window not focused
     use 'akinsho/nvim-toggleterm.lua'
 
     use {
@@ -51,21 +50,11 @@ return require('packer').startup {
     }
 
     use {
-      'folke/trouble.nvim',
-      requires = 'kyazdani42/nvim-web-devicons',
-      config = function() require('trouble').setup{} end
-    }
-
-    use {
       'nvim-telescope/telescope.nvim',
       requires = {{ 'nvim-lua/popup.nvim' }, { 'nvim-lua/plenary.nvim' }},
       config = function() require('telescope').setup{} end
     }
 
-
-    -- Fixes
-    use 'antoinemadec/FixCursorHold.nvim'    -- Cursorhold
-    use 'jeffkreeftmeijer/vim-numbertoggle'  -- Absolute line numbers when window not focused
 
     -- Git
     use 'tpope/vim-rhubarb'
@@ -74,10 +63,12 @@ return require('packer').startup {
     use 'lewis6991/gitsigns.nvim'
 
     -- Theme/status/buffer line
+    -- TODO: Move to gruvbox-material theme
+    -- use 'sainnhe/gruvbox-material'
     use 'joshdick/onedark.vim'
     use 'hoob3rt/lualine.nvim'
     use 'romgrk/barbar.nvim'
-    -- TODO: Move to galaxyline/bufferline for custom status line whenever lsp is added
+    -- TODO: Move to galaxyline/bufferline for custom status line
     -- use 'glepnir/galaxyline.nvim'
     -- use 'akinsho/nvim-bufferline.lua'
 

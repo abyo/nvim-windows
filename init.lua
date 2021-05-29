@@ -8,15 +8,21 @@
 --    |  | |  |\  `'  / `-./  /.__)   `'  '-'  '
 --    `--' `--' `----'    `--'          `-----' 
 
--- TODO: Move single file plugin to a folder
-require 'lt.defaults'
-require 'lt.plugins'
-require 'lt.theme'
-require 'lt.kommentary'
-require 'lt.git'
-require 'lt.statusline'
-require 'lt.dashboard'
-require 'lt.fzf'
-require 'lt.colorizer'
-require 'lt.filetree'
-require 'lt.terminal'
+-- Packer plugins
+require('plugins')
+
+-- Default configuration
+require('settings')
+require('settings.theme')
+
+-- Plugins configuration
+require('plugins.colorizer')
+require('plugins.nvimtree')
+require('plugins.gitsigns')
+require('plugins.bufferline')
+require('plugins.statusline')
+require('plugins.toggleterm')
+require('plugins.dashboard')
+
+-- Keymap
+require('settings.keymap')

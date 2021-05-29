@@ -1,1 +1,0 @@
-require 'lt.colorizer.settings'

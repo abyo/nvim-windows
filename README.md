@@ -2,20 +2,22 @@
 
 Migrating to LUA in progress.
 
-I'm using a nerd font (to use glyphs in certain plugins) called `Hack Nerd Font`.
-You can use it or use a different one. Here's a [direct link to it](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip).
+I'm using a nerd font (to use glyphs in certain plugins) called `Hack Nerd
+Font`.  You can use it or use a different one. Here's a [direct link to
+it](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip).
 
 ## How to install LUA on Windows 10
 
-If you want to work with LUA on Windows, it's pretty confusing. 
-It doesn't have to be! Just install everything you need with [WinLua](http://winlua.net/).
+If you want to work with LUA on Windows, it's pretty confusing.  It doesn't
+have to be! Just install everything you need with [WinLua](http://winlua.net/).
 
 ## ToDo
 
 - [x] Add more information on the README file
+- [x] Change project architecture
 - [ ] Move installation instructions pages to wiki pages
 - [ ] Snippets integration
-- [ ] Fix sessions loading/saving
+- [ ] Fix sessions loading/saving by moving to Startify?
 - [ ] Finish generic config
 - [x] Terminal integration
 
