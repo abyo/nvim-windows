@@ -42,6 +42,7 @@ return require('packer').startup {
     use { 'lukas-reineke/indent-blankline.nvim', branch = 'lua' }
     use 'jeffkreeftmeijer/vim-numbertoggle'  -- Absolute line numbers when window not focused
     use 'akinsho/nvim-toggleterm.lua'
+    use 'mhinz/vim-startify'          -- Starter screen
 
     use {
       'folke/todo-comments.nvim',
@@ -55,8 +56,8 @@ return require('packer').startup {
       config = function() require('telescope').setup{} end
     }
 
-
     -- Git
+    -- TODO: Move from vim-fugitive/gv to gitUI
     use 'tpope/vim-rhubarb'
     use 'tpope/vim-fugitive'
     use 'junegunn/gv.vim'
@@ -66,14 +67,12 @@ return require('packer').startup {
     -- TODO: Move to gruvbox-material theme
     -- use 'sainnhe/gruvbox-material'
     use 'joshdick/onedark.vim'
+
     use 'hoob3rt/lualine.nvim'
     use 'romgrk/barbar.nvim'
     -- TODO: Move to galaxyline/bufferline for custom status line
     -- use 'glepnir/galaxyline.nvim'
     -- use 'akinsho/nvim-bufferline.lua'
-
-    -- Starter screen
-    use 'glepnir/dashboard-nvim'
 
     -- Fuzzy finder
     use 'junegunn/fzf'

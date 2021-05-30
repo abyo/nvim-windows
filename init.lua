@@ -22,7 +22,6 @@ require('plugins.gitsigns')
 require('plugins.bufferline')
 require('plugins.statusline')
 require('plugins.toggleterm')
-require('plugins.dashboard')
 
 -- Keymap
 require('settings.keymap')
