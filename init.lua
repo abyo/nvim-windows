@@ -17,6 +17,7 @@ require('settings.theme')
 
 -- Plugins configuration
 require('plugins.colorizer')
+require('plugins.startify')
 require('plugins.nvimtree')
 require('plugins.gitsigns')
 require('plugins.bufferline')

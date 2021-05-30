@@ -67,7 +67,7 @@ keymap('n', '<Leader>c', 'gcc', { noremap = false })
 keymap('v', '<Leader>c', 'gc<BAR><Esc>', { noremap = false })
 
 -- Git (lewis6991/gitsigns.nvim)
--- TODO: Add remaps for git signs?
+-- TODO: Remove for gitui whenever change happens
 keymap('n', '<Leader>gs', '<cmd>G<CR>', { noremap = false })
 keymap('n', '<Leader>ga', '<cmd>Git add .<CR>', { noremap = false })
 keymap('n', '<Leader>gl', '<cmd>Git log<CR>', { noremap = false })
@@ -87,6 +87,7 @@ keymap('n', '<C-f>', '<cmd>BLines<CR>')
 keymap('n', '<Leader>t', '<cmd>ToggleTerm<CR>')
 keymap('t', '<Leader>t', '<cmd>ToggleTerm<CR>')
 
--- Dashboard (glepnir/dashboard-nvim)
-keymap('n', '<Leader>ss', '<cmd>SessionSave<CR>')
-keymap('n', '<Leader>sl', '<cmd>SessionLoad<CR>')
+-- Starfity (mhinz/vim-startify)
+keymap('n', '<Leader>ss', '<cmd>SSave<CR>')
+keymap('n', '<Leader>sl', '<cmd>SLoad<CR>')
+keymap('n', '<Leader>sd', '<cmd>SDelete<CR>')
