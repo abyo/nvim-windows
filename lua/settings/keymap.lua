@@ -14,7 +14,6 @@ keymap('n', '<Leader><CR>', '<cmd>lua reload()<CR>')
 keymap('i', '<c-s>', '<C-o>:w<CR>', { noremap = false })
 keymap('n', '<c-s>', ':w<CR>', { noremap = false })
 keymap('n', '<c-q>', ':wq!<CR>', { noremap = false })
-keymap('n', '<c-Q>', ':q!<CR>', { noremap = false })
 
 -- Moving between slits
 keymap('n', '<c-h>', '<C-w>h')
@@ -31,9 +30,9 @@ keymap('n', '<C-Right>', ':vertical resize -2<CR>')
 keymap('n', '<C-Left>', ':vertical resize +2<CR>')
 
 -- Moving between buffers
-keymap('n', '<tab>', ':BufferNext<CR>')
-keymap('n', '<s-tab>', ':BufferPrevious<CR>')
-keymap('n', '<C-w>', ':BufferClose<CR>')
+keymap('n', '<Leader>bn', ':BufferNext<CR>')
+keymap('n', '<Leader>bp', ':BufferPrevious<CR>')
+keymap('n', '<Leader>bc', ':BufferClose<CR>')
 
 -- Close all buffers except current one
 keymap('n', '<Leader>db', ':silent w <BAR> :silent %bd <BAR> e#<CR>')

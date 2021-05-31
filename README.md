@@ -8,7 +8,7 @@ it](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip).
 
 ## How to install LUA on Windows 10
 
-If you want to work with LUA on Windows, it's pretty confusing.  It doesn't
+If you want to work with LUA on Windows, it's pretty confusing. It doesn't
 have to be! Just install everything you need with [WinLua](http://winlua.net/).
 
 ## ToDo

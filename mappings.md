@@ -62,14 +62,14 @@ which can be found in the default folder.**
 |     Normal    |          C-q         |         Saving and leaving current file        |
 |     Normal    |       C-h/j/k/l      | Moving between windows (left/bottom/top/right) |
 |     Normal    | C-Up/Down/Right/Left |    Resizing windows (top/bottom/right/left)    |
-|     Normal    |       tab/s-tab      |             Moving between buffers             |
+|     Normal    |     Leader-bp/bn     |             Moving between buffers             |
 |    Terminal   |       Leader-jj      |              Escape terminal mode              |
 |     Visual    |          C-c         |                      Copy                      |
 | Normal/Insert |          C-v         |                      Paste                     |
 |     Visual    |          J/K         |          Move a selected line up/down          |
 |     Visual    |       tab/s-tab      |                    Indenting                   |
 |     Normal    |       Leader-db      |      Close all buffers except current one      |
-|     Normal    |          C-w         |              Close current buffer              |
+|     Normal    |       Leader-bc      |              Close current buffer              |
 |     Visual    |           d          |          Delete a line in visual mode          |
 |     Insert    |       jk/kj/jj       |           Fast escape in insert mode           |
 
