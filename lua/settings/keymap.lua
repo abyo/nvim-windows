@@ -35,7 +35,7 @@ keymap('n', '<Leader>bp', ':BufferPrevious<CR>')
 keymap('n', '<Leader>bc', ':BufferClose<CR>')
 
 -- Close all buffers except current one
-keymap('n', '<Leader>db', ':silent w <BAR> :silent %bd <BAR> e#<CR>')
+keymap('n', '<Leader>bac', ':silent w <BAR> :silent %bd <BAR> e#<CR>')
 
 -- Handling copy/pasting on Windows
 keymap('v', '<C-c>', '"+y')

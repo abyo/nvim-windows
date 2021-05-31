@@ -15,8 +15,9 @@ have to be! Just install everything you need with [WinLua](http://winlua.net/).
 
 - [x] Add more information on the README file
 - [x] Change project architecture
-- [ ] Snippets integration
+- [x] Snippets integration
 - [x] Fix sessions loading/saving by moving to Startify?
+- [ ] Add wiki pages (how to add keymaps, plugins and !snippets!)
 - [ ] Finish generic config
 - [x] Terminal integration
 

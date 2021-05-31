@@ -68,7 +68,7 @@ which can be found in the default folder.**
 | Normal/Insert |          C-v         |                      Paste                     |
 |     Visual    |          J/K         |          Move a selected line up/down          |
 |     Visual    |       tab/s-tab      |                    Indenting                   |
-|     Normal    |       Leader-db      |      Close all buffers except current one      |
+|     Normal    |      Leader-bac      |      Close all buffers except current one      |
 |     Normal    |       Leader-bc      |              Close current buffer              |
 |     Visual    |           d          |          Delete a line in visual mode          |
 |     Insert    |       jk/kj/jj       |           Fast escape in insert mode           |

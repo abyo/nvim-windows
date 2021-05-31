@@ -108,3 +108,4 @@ plug.vim.old
 pack/
 plugin/
 .vscode
+ultisnips/

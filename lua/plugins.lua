@@ -77,5 +77,9 @@ return require('packer').startup {
     -- Fuzzy finder
     use 'junegunn/fzf'
     use 'junegunn/fzf.vim'
+
+    -- Snippets integration
+    use 'SirVer/ultisnips'
+    -- use 'honza/vim-snippets' -- I don't use snippets collection but it's available
 end
 }
