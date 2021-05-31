@@ -31,12 +31,8 @@ return require('packer').startup {
   function(use)
     use { 'wbthomason/packer.nvim', opt = true }
     use 'kyazdani42/nvim-web-devicons'
-    use 'rstacruz/vim-closer'
-    use 'tpope/vim-endwise'
     use 'wakatime/vim-wakatime'       -- Coding Tracker
     use 'b3nj5m1n/kommentary'         -- Fast Commentary
-    use 'mbbill/undotree'             -- Show tree history
-    use 'justinmk/vim-sneak'          -- Better sneak
     use 'norcalli/nvim-colorizer.lua' -- Add preview colors
     use 'kyazdani42/nvim-tree.lua'    -- File Tree
     use { 'lukas-reineke/indent-blankline.nvim', branch = 'lua' }
@@ -44,20 +40,14 @@ return require('packer').startup {
     use 'akinsho/nvim-toggleterm.lua'
     use 'mhinz/vim-startify'          -- Starter screen
 
-    use {
-      'folke/todo-comments.nvim',
-      requires = 'nvim-lua/plenary.nvim',
-      config = function() require('todo-comments').setup{} end
-    }
+    use { 'folke/todo-comments.nvim',requires = 'nvim-lua/plenary.nvim',
+    config = function() require('todo-comments').setup{} end }
 
-    use {
-      'nvim-telescope/telescope.nvim',
-      requires = {{ 'nvim-lua/popup.nvim' }, { 'nvim-lua/plenary.nvim' }},
-      config = function() require('telescope').setup{} end
-    }
+    use { 'nvim-telescope/telescope.nvim', requires = {{ 'nvim-lua/popup.nvim' }, { 'nvim-lua/plenary.nvim' }},
+    config = function() require('telescope').setup{} end }
 
     -- Git
-    -- TODO: Move from vim-fugitive/gv to gitUI
+    -- TODO: Move from vim-fugitive/gv to lazygit
     use 'tpope/vim-rhubarb'
     use 'tpope/vim-fugitive'
     use 'junegunn/gv.vim'
@@ -79,6 +69,7 @@ return require('packer').startup {
     use 'junegunn/fzf.vim'
 
     -- Snippets integration
+    use 'fhill2/telescope-ultisnips.nvim'
     use 'SirVer/ultisnips'
     -- use 'honza/vim-snippets' -- I don't use snippets collection but it's available
 end

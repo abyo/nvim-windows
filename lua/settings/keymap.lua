@@ -65,7 +65,7 @@ keymap('n', '<C-b>', '<cmd>NvimTreeToggle<CR>')
 keymap('n', '<Leader>c', 'gcc', { noremap = false })
 keymap('v', '<Leader>c', 'gc<BAR><Esc>', { noremap = false })
 
--- Git (lewis6991/gitsigns.nvim)
+-- Git (tpope/fugitive)
 -- TODO: Remove for gitui whenever change happens
 keymap('n', '<Leader>gs', '<cmd>G<CR>', { noremap = false })
 keymap('n', '<Leader>ga', '<cmd>Git add .<CR>', { noremap = false })
