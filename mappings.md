@@ -42,8 +42,7 @@ which can be found in the default folder.**
 - [Default](#default-back-to-top)
 - [Kommentary](#kommentary-back-to-top)
 - [Git](#git-back-to-top)
-- [Dashboard](#dashboard-back-to-top)
-- [Undotree](#undotree-back-to-top)
+- [Startify](#startify-back-to-top)
 - [Indent Guides](#indent-guides-back-to-top)
 - [Fzf](#fzf-back-to-top)
 - [FileTree](#filetree-back-to-top)
@@ -52,8 +51,6 @@ which can be found in the default folder.**
 ---
 
 ## Default ([back to top](#mappings))
-
-[Access file](/lua/lt/defaults/remaps.lua)
 
 |      Mode     |        Mapping       |                   Description                  |
 |:-------------:|:--------------------:|:----------------------------------------------:|
@@ -77,8 +74,6 @@ which can be found in the default folder.**
 
 ## Kommentary ([back to top](#mappings))
 
-[Access file](/lua/lt/kommentary/remaps.lua)
-
 ```bash
 use 'b3nj5m1n/kommentary'
 ```
@@ -89,8 +84,6 @@ use 'b3nj5m1n/kommentary'
 | Visual | Leader-c | Comment visual selection |
 
 ## Git ([back to top](#mappings))
-
-[Access file](/lua/lt/git/remaps.lua)
 
 ```bash
 use 'tpope/vim-rhubarb'
@@ -108,36 +101,19 @@ use 'lewis6991/gitsigns.nvim'
 | Normal | Leader-gph |   Git push  |
 | Normal | Leader-gpl |   Git pull  |
 
-## Dashboard ([back to top](#mappings))
-
-[Access file](/lua/lt/dashboard/remaps.lua)
+## Startify ([back to top](#mappings))
 
 ```bash
-use 'glepnir/dashboard-nvim'
+use 'mhinz/vim-startify'
 ```
 
-|  Mode  |  Mapping  |  Description |
-|:------:|:---------:|:------------:|
-| Normal | Leader-ss | Save Session |
-| Normal | Leader-sl | Load Session |
-
-## Undotree ([back to top](#mappings))
-
-[Access file](/lua/lt/undotree/remaps.lua)
-
-```bash
-use 'mbbill/undotree'
-```
-
-|  Mode  |   Mapping  |  Description  |
-|:------:|:----------:|:-------------:|
-| Normal | Leader-uts | Show Undotree |
-| Normal | Leader-uth | Hide Undotree |
-
+|  Mode  |  Mapping  |   Description  |
+|:------:|:---------:|:--------------:|
+| Normal | Leader-ss |  Save Session  |
+| Normal | Leader-sl |  Load Session  |
+| Normal | Leader-sd | Delete Session |
 
 ## Indent Guides ([back to top](#mappings))
-
-[Access file](/lua/lt/indent-guides/remaps.lua)
 
 ```bash
 use 'glepnir/indent-guides.nvim'
@@ -150,33 +126,30 @@ use 'glepnir/indent-guides.nvim'
 | Normal | Leader-id | Disable Indent Guides |
 
 
-## Fzf ([back to top](#mappings))
-
-[Access file](/lua/lt/fzf/remaps.lua)
+## Telescope ([back to top](#mappings))
 
 ```bash
-use 'junegunn/fzf'
-use 'junegunn/fzf.vim' 
+use { 'nvim-telescope/telescope.nvim', requires = {{ 'nvim-lua/popup.nvim' }, { 'nvim-lua/plenary.nvim' }} }
+use 'nvim-telescope/telescope-fzy-native.nvim'
+use 'nvim-telescope/telescope-project.nvim'
+use { 'pwntester/octo.nvim', requires = {{'nvim-lua/plenary.nvim'}, {'nvim-lua/popup.nvim'}} }
+use 'fhill2/telescope-ultisnips.nvim'
 ```
 
-You also need fzf and ripgrep on your PC. On Windows,
+You also need ripgrep on your PC. On Windows,
 you can use [scoop](https://scoop.sh/)
 
 ```bash
-scoop install ripgrep fzf
+scoop install ripgrep
 ```
 
 |  Mode  |  Mapping  |             Description             |
 |:------:|:---------:|:-----------------------------------:|
-| Normal | Leader-gf |        Search into git files        |
 | Normal |  Leader-p |       Search a file in project      |
 | Normal | Leader-bu |     Switch onto specific buffer     |
 | Normal |  Leader-f | Search for specific line in project |
-| Normal |    C-f    |   Search for specific line in file  |
 
 ## FileTree ([back to top](#mappings))
-
-[Access file](/lua/lt/filetree/remaps.lua)
 
 ```bash
 use 'kyazdani42/nvim-tree.lua'
@@ -189,7 +162,9 @@ use 'kyazdani42/nvim-tree.lua'
 
 ## Terminal ([back to top](#mappings))
 
-[Access file](/lua/lt/terminal/remaps.lua)
+```bash
+use 'akinsho/nvim-toggleterm.lua'
+```
 
 |   Mode   |  Mapping |      Description     |
 |:--------:|:--------:|:--------------------:|
