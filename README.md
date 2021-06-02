@@ -14,6 +14,7 @@ have to be! Just install everything you need with [WinLua](http://winlua.net/).
 ## ToDo
 
 - [ ] Add wiki pages (how to add keymaps, plugins and !snippets!)
+- [x] Change fzf to telescope (check doc)
 - [ ] Change git wrapper (lazygit)
 - [ ] Add whichkey plugin/config
 - [ ] Check todo comments

@@ -39,12 +39,17 @@ return require('packer').startup {
     use 'jeffkreeftmeijer/vim-numbertoggle'  -- Absolute line numbers when window not focused
     use 'akinsho/nvim-toggleterm.lua'
     use 'mhinz/vim-startify'          -- Starter screen
+    use 'SirVer/ultisnips'            -- Snippets integration
 
     use { 'folke/todo-comments.nvim',requires = 'nvim-lua/plenary.nvim',
     config = function() require('todo-comments').setup{} end }
 
-    use { 'nvim-telescope/telescope.nvim', requires = {{ 'nvim-lua/popup.nvim' }, { 'nvim-lua/plenary.nvim' }},
-    config = function() require('telescope').setup{} end }
+    -- Telescope
+    use { 'nvim-telescope/telescope.nvim', requires = {{ 'nvim-lua/popup.nvim' }, { 'nvim-lua/plenary.nvim' }} }
+    use 'nvim-telescope/telescope-fzy-native.nvim'
+    use 'nvim-telescope/telescope-project.nvim'
+    use { 'pwntester/octo.nvim', requires = {{'nvim-lua/plenary.nvim'}, {'nvim-lua/popup.nvim'}} }
+    use 'fhill2/telescope-ultisnips.nvim'
 
     -- Git
     -- TODO: Move from vim-fugitive/gv to lazygit
@@ -61,16 +66,6 @@ return require('packer').startup {
     use 'hoob3rt/lualine.nvim'
     use 'romgrk/barbar.nvim'
     -- TODO: Move to galaxyline/bufferline for custom status line
-    -- use 'glepnir/galaxyline.nvim'
-    -- use 'akinsho/nvim-bufferline.lua'
 
-    -- Fuzzy finder
-    use 'junegunn/fzf'
-    use 'junegunn/fzf.vim'
-
-    -- Snippets integration
-    use 'fhill2/telescope-ultisnips.nvim'
-    use 'SirVer/ultisnips'
-    -- use 'honza/vim-snippets' -- I don't use snippets collection but it's available
 end
 }

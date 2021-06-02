@@ -74,13 +74,10 @@ keymap('n', '<Leader>gc', '<cmd>Git commit<CR>', { noremap = false })
 keymap('n', '<Leader>gph', '<cmd>Git push<CR>', { noremap = false })
 keymap('n', '<Leader>gpl', '<cmd>Git pull<CR>', { noremap = false })
 
--- Fzf (junegunn/fzf)
-keymap('n', '<Leader>gf', '<cmd>GFiles --cached --others --exclude-standard<CR>')
--- NOTE: Might change to telescope find files?
-keymap('n', '<Leader>p', '<cmd>Files<CR>')
-keymap('n', '<Leader>bu', '<cmd>Buffers<CR>')
-keymap('n', '<Leader>f', '<cmd>Rg<CR>')
-keymap('n', '<C-f>', '<cmd>BLines<CR>')
+-- Telescope (nvim-telescope/telescope.nvim)
+keymap('n', '<Leader>p', '<cmd>Telescope find_files<CR>')
+keymap('n', '<Leader>bu', '<cmd>Telescope buffers<CR>')
+keymap('n', '<Leader>f', '<cmd>Telescope live_grep<CR>')
 
 -- Terminal (akinsho/nvim-toggleterm.lua)
 keymap('n', '<Leader>t', '<cmd>ToggleTerm<CR>')

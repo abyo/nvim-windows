@@ -20,10 +20,11 @@ require('plugins.colorizer')
 require('plugins.startify')
 require('plugins.nvimtree')
 require('plugins.gitsigns')
+require('plugins.snippets')
 require('plugins.bufferline')
 require('plugins.statusline')
 require('plugins.toggleterm')
-require('plugins.snippets')
+require('plugins.telescope')
 
 -- Keymap
 require('settings.keymap')
