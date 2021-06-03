@@ -29,43 +29,50 @@ end
 
 return require('packer').startup {
   function(use)
+    -- Packer can manage itself as an optional plugin
     use { 'wbthomason/packer.nvim', opt = true }
-    use 'kyazdani42/nvim-web-devicons'
-    use 'wakatime/vim-wakatime'       -- Coding Tracker
-    use 'b3nj5m1n/kommentary'         -- Fast Commentary
-    use 'norcalli/nvim-colorizer.lua' -- Add preview colors
-    use 'kyazdani42/nvim-tree.lua'    -- File Tree
-    use { 'lukas-reineke/indent-blankline.nvim', branch = 'lua' }
-    use 'jeffkreeftmeijer/vim-numbertoggle'  -- Absolute line numbers when window not focused
-    use 'akinsho/nvim-toggleterm.lua'
-    use 'mhinz/vim-startify'          -- Starter screen
-    use 'SirVer/ultisnips'            -- Snippets integration
 
-    use { 'folke/todo-comments.nvim',requires = 'nvim-lua/plenary.nvim',
-    config = function() require('todo-comments').setup{} end }
+    -- Dependencies
+    use 'nvim-lua/popup.nvim'
+    use 'nvim-lua/plenary.nvim'
+    use 'kyazdani42/nvim-web-devicons'
 
     -- Telescope
-    use { 'nvim-telescope/telescope.nvim', requires = {{ 'nvim-lua/popup.nvim' }, { 'nvim-lua/plenary.nvim' }} }
-    use 'nvim-telescope/telescope-fzy-native.nvim'
+    use 'pwntester/octo.nvim'
+    use 'nvim-telescope/telescope.nvim'
     use 'nvim-telescope/telescope-project.nvim'
-    use { 'pwntester/octo.nvim', requires = {{'nvim-lua/plenary.nvim'}, {'nvim-lua/popup.nvim'}} }
+    use 'nvim-telescope/telescope-fzy-native.nvim'
+
+    -- Snippets
+    use 'SirVer/ultisnips'
     use 'fhill2/telescope-ultisnips.nvim'
 
     -- Git
     -- TODO: Move from vim-fugitive/gv to lazygit
+    use 'junegunn/gv.vim'
     use 'tpope/vim-rhubarb'
     use 'tpope/vim-fugitive'
-    use 'junegunn/gv.vim'
     use 'lewis6991/gitsigns.nvim'
 
-    -- Theme/status/buffer line
+    -- UI
+    use 'romgrk/barbar.nvim'
+    use 'hoob3rt/lualine.nvim'
+    use 'kyazdani42/nvim-tree.lua'
+    use 'akinsho/nvim-toggleterm.lua'
+    use { 'lukas-reineke/indent-blankline.nvim', branch = 'lua' }
+
     -- TODO: Move to gruvbox-material theme
     -- use 'sainnhe/gruvbox-material'
     use 'joshdick/onedark.vim'
 
-    use 'hoob3rt/lualine.nvim'
-    use 'romgrk/barbar.nvim'
-    -- TODO: Move to galaxyline/bufferline for custom status line
+    -- General plugins
+    use 'mhinz/vim-startify'
+    use 'b3nj5m1n/kommentary'
+    use 'norcalli/nvim-colorizer.lua'
+    use 'jeffkreeftmeijer/vim-numbertoggle'
+    use { 'folke/todo-comments.nvim', config = function() require('todo-comments').setup{} end }
 
-end
-}
+    -- Optional plugins
+    use 'wakatime/vim-wakatime'
+    -- use { 'andweeb/presence.nvim', config = function() require('presence'):setup({}) end }
+end }
