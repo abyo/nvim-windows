@@ -11,17 +11,17 @@ end
 keymap('n', '<Leader><CR>', '<cmd>lua reload()<CR>')
 
 -- Saving
-keymap('i', '<c-s>', '<C-o>:w<CR>', { noremap = false })
-keymap('n', '<c-s>', ':w<CR>', { noremap = false })
-keymap('n', '<c-q>', ':wq!<CR>', { noremap = false })
+keymap('i', '<C-s>', '<C-o>:w<CR>', { noremap = false })
+keymap('n', '<C-s>', ':w<CR>', { noremap = false })
+keymap('n', '<C-q>', ':wq!<CR>', { noremap = false })
 
 -- Moving between slits
-keymap('n', '<c-h>', '<C-w>h')
-keymap('n', '<c-j>', '<C-w>j')
-keymap('n', '<c-k>', '<C-w>k')
-keymap('n', '<c-l>', '<C-w>l')
-keymap('n', '<c-h>', '<C-\\><C-n><C-w>h')
-keymap('n', '<c-l>', '<C-\\><C-n><C-w>l')
+keymap('n', '<C-h>', '<C-w>h')
+keymap('n', '<C-j>', '<C-w>j')
+keymap('n', '<C-k>', '<C-w>k')
+keymap('n', '<C-l>', '<C-w>l')
+keymap('n', '<C-h>', '<C-\\><C-n><C-w>h')
+keymap('n', '<C-l>', '<C-\\><C-n><C-w>l')
 
 -- Resize slits
 keymap('n', '<C-Up>', ':resize -2<CR>')

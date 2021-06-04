@@ -48,7 +48,6 @@ return require('packer').startup {
     use 'fhill2/telescope-ultisnips.nvim'
 
     -- Git
-    -- TODO: Move from vim-fugitive/gv to lazygit
     use 'lewis6991/gitsigns.nvim'
     use 'kdheepak/lazygit.nvim'
     use 'sindrets/diffview.nvim'
