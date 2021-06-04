@@ -21,3 +21,5 @@ require('gitsigns').setup {
   status_formatter = nil, -- Use default
   use_decoration_api = false
 }
+
+require('diffview').setup {}

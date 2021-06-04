@@ -7,7 +7,12 @@ Font`. You can use it or use a different one. Here's a [direct link to
 it](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip).
 
 If you're planning on using the `Octo` plugin, you need to install the
-[GitHub CLI](https://cli.github.com/)
+[GitHub CLI](https://cli.github.com/). Besides, if you're planning on using
+the Lazygit CLI, you need to install it with [scoop](https://scoop.sh/).
+
+```
+scoop install lazygit
+```
 
 ## How to install LUA on Windows 10
 
@@ -18,7 +23,8 @@ have to be! Just install everything you need with [WinLua](http://winlua.net/).
 
 - [ ] Add wiki pages (how to add keymaps, plugins and !snippets!)
 - [x] Change fzf to telescope (check doc)
-- [ ] Change git wrapper (lazygit)
+- [ ] Switch theme/statusline plugin
+- [x] Change git wrapper (lazygit)
 - [ ] Add whichkey plugin/config
 - [ ] Check todo comments
 - [ ] Finish generic config

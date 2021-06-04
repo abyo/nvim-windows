@@ -49,21 +49,21 @@ return require('packer').startup {
 
     -- Git
     -- TODO: Move from vim-fugitive/gv to lazygit
-    use 'junegunn/gv.vim'
-    use 'tpope/vim-rhubarb'
-    use 'tpope/vim-fugitive'
     use 'lewis6991/gitsigns.nvim'
+    use 'kdheepak/lazygit.nvim'
+    use 'sindrets/diffview.nvim'
 
     -- UI
     use 'romgrk/barbar.nvim'
+    use 'joshdick/onedark.vim'
     use 'hoob3rt/lualine.nvim'
     use 'kyazdani42/nvim-tree.lua'
     use 'akinsho/nvim-toggleterm.lua'
     use { 'lukas-reineke/indent-blankline.nvim', branch = 'lua' }
 
-    -- TODO: Move to gruvbox-material theme
+    -- TODO: Move to gruvbox/feline for theme/statusline
     -- use 'sainnhe/gruvbox-material'
-    use 'joshdick/onedark.vim'
+    -- use 'famiu/feline.nvim'
 
     -- General plugins
     use 'mhinz/vim-startify'
@@ -74,5 +74,5 @@ return require('packer').startup {
 
     -- Optional plugins
     use 'wakatime/vim-wakatime'
-    -- use { 'andweeb/presence.nvim', config = function() require('presence'):setup({}) end }
+    use { 'andweeb/presence.nvim', config = function() require('presence'):setup({}) end }
 end }

@@ -73,6 +73,7 @@ keymap('n', '<Leader>gl', '<cmd>Git log<CR>', { noremap = false })
 keymap('n', '<Leader>gc', '<cmd>Git commit<CR>', { noremap = false })
 keymap('n', '<Leader>gph', '<cmd>Git push<CR>', { noremap = false })
 keymap('n', '<Leader>gpl', '<cmd>Git pull<CR>', { noremap = false })
+keymap('n', '<Leader>gs', '<cmd>LazyGit<CR>', { noremap = false })
 
 -- Telescope (nvim-telescope/telescope.nvim)
 keymap('n', '<Leader>p', '<cmd>Telescope find_files<CR>')
@@ -87,3 +88,4 @@ keymap('t', '<Leader>t', '<cmd>ToggleTerm<CR>')
 keymap('n', '<Leader>ss', '<cmd>SSave<CR>')
 keymap('n', '<Leader>sl', '<cmd>SLoad<CR>')
 keymap('n', '<Leader>sd', '<cmd>SDelete<CR>')
+
