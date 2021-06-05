@@ -37,6 +37,10 @@ return require('packer').startup {
     use 'nvim-lua/plenary.nvim'
     use 'kyazdani42/nvim-web-devicons'
 
+    -- Treesitter
+    use 'andymass/vim-matchup'
+    use 'nvim-treesitter/nvim-treesitter'
+
     -- Telescope
     use 'pwntester/octo.nvim'
     use 'nvim-telescope/telescope.nvim'
