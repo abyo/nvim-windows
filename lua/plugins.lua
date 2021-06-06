@@ -39,7 +39,7 @@ return require('packer').startup {
 
     -- Treesitter
     use 'andymass/vim-matchup'
-    use 'nvim-treesitter/nvim-treesitter'
+    use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
     -- Telescope
     use 'pwntester/octo.nvim'
