@@ -1,23 +1,8 @@
 # neoVim LUA config for Windows 10
 
-Migrating to LUA in progress.
+Installation instruction can be found [on the wiki](https://github.com/abyo/nvim-windows/wiki/Windows-Installation).
 
-I'm using a nerd font (to use glyphs in certain plugins) called `Hack Nerd
-Font`. You can use it or use a different one. Here's a [direct link to
-it](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip).
-
-If you're planning on using the `Octo` plugin, you need to install the
-[GitHub CLI](https://cli.github.com/). Besides, if you're planning on using
-the Lazygit CLI, you need to install it with [scoop](https://scoop.sh/).
-
-```
-scoop install lazygit
-```
-
-## How to install LUA on Windows 10
-
-If you want to work with LUA on Windows, it's pretty confusing. It doesn't
-have to be! Just install everything you need with [WinLua](http://winlua.net/).
+Keymaps can be found [on the wiki aswell](https://github.com/abyo/nvim-windows/wiki/Keymaps).
 
 ## ToDo
 
