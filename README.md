@@ -22,6 +22,9 @@ have to be! Just install everything you need with [WinLua](http://winlua.net/).
 ## ToDo
 
 - [ ] Add wiki pages (how to add keymaps, plugins and !snippets!)
+  - [x] Installation (Windows)
+  - [ ] Keymaps
+  - [ ] Snippets
 - [x] Change fzf to telescope (check doc)
 - [ ] Switch theme/statusline plugin
 - [x] Change git wrapper (lazygit)
