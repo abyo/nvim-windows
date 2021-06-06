@@ -1,5 +1,3 @@
-# neoVim LUA config for Windows 10
-
 Installation instruction can be found [on the wiki](https://github.com/abyo/nvim-windows/wiki/Windows-Installation).
 
 Keymaps can be found [on the wiki aswell](https://github.com/abyo/nvim-windows/wiki/Keymaps).
@@ -8,7 +6,7 @@ Keymaps can be found [on the wiki aswell](https://github.com/abyo/nvim-windows/w
 
 - [ ] Add wiki pages (how to add keymaps, plugins and !snippets!)
   - [x] Installation (Windows)
-  - [ ] Keymaps
+  - [x] Keymaps
   - [ ] Snippets
 - [x] Change fzf to telescope (check doc)
 - [ ] Switch theme/statusline plugin
@@ -16,8 +14,3 @@ Keymaps can be found [on the wiki aswell](https://github.com/abyo/nvim-windows/w
 - [ ] Add whichkey plugin/config
 - [ ] Check todo comments
 - [ ] Finish generic config
-
-## Mappings
-
-You can find all mappings in the [mapping file](mappings.md). If you're looking
-for the file where all mappings are, [here it is](/settings/keymap.lua).
