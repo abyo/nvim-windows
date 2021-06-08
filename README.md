@@ -1,6 +1,4 @@
-Installation instruction can be found [on the wiki](https://github.com/abyo/nvim-windows/wiki/Windows-Installation).
-
-Keymaps can be found [on the wiki aswell](https://github.com/abyo/nvim-windows/wiki/Keymaps).
+Installation instruction can be found [on the wiki](https://github.com/abyo/nvim-windows/wiki/Windows-Installation). Keymaps can be found [on the wiki aswell](https://github.com/abyo/nvim-windows/wiki/Keymaps).
 
 ## ToDo
 
@@ -10,6 +8,9 @@ Keymaps can be found [on the wiki aswell](https://github.com/abyo/nvim-windows/w
   - [ ] Snippets
 - [x] Change fzf to telescope (check doc)
 - [ ] Switch theme/statusline plugin
+  - [x] Change theme to gruvbox
+  - [ ] Add comment code to switch to onedark
+  - [ ] Change statusline plugin
 - [x] Change git wrapper (lazygit)
 - [ ] Add whichkey plugin/config
 - [ ] Check todo comments

@@ -65,7 +65,7 @@ return require('packer').startup {
     use { 'lukas-reineke/indent-blankline.nvim', branch = 'lua' }
 
     -- TODO: Move to gruvbox/feline for theme/statusline
-    -- use 'sainnhe/gruvbox-material'
+    use 'sainnhe/gruvbox-material'
     -- use 'famiu/feline.nvim'
 
     -- General plugins
