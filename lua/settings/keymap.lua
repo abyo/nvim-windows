@@ -6,7 +6,6 @@ function keymap(mode, lhs, rhs, opts)
   }))
 end
 
--- TODO: Change c to C in ctrl mappings
 -- Reloading lua file
 keymap('n', '<Leader><CR>', '<cmd>lua reload()<CR>')
 
@@ -66,7 +65,6 @@ keymap('n', '<Leader>c', 'gcc', { noremap = false })
 keymap('v', '<Leader>c', 'gc<BAR><Esc>', { noremap = false })
 
 -- Git (tpope/fugitive)
--- TODO: Remove for gitui whenever change happens
 keymap('n', '<Leader>gs', '<cmd>G<CR>', { noremap = false })
 keymap('n', '<Leader>ga', '<cmd>Git add .<CR>', { noremap = false })
 keymap('n', '<Leader>gl', '<cmd>Git log<CR>', { noremap = false })
