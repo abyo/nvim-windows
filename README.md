@@ -6,7 +6,6 @@ Installation instruction can be found [on the wiki](https://github.com/abyo/nvim
   - [x] Installation (Windows)
   - [x] Keymaps
   - [ ] Snippets
-- [x] Change fzf to telescope (check doc)
 - [ ] Switch theme/statusline plugin
   - [x] Change theme to gruvbox
   - [ ] Add comment code to switch to onedark
@@ -15,3 +14,5 @@ Installation instruction can be found [on the wiki](https://github.com/abyo/nvim
 - [ ] Add whichkey plugin/config
 - [ ] Check todo comments
 - [ ] Finish generic config
+
+Terminal used [is Alacritty](https://github.com/abyo/nvim-windows/wiki/Alacritty).
