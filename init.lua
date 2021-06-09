@@ -16,16 +16,18 @@ require('settings')
 require('settings.theme')
 
 -- Plugins configuration
-require('plugins.colorizer')
+require('plugins.numb')
+require('plugins.vmlens')
 require('plugins.startify')
-require('plugins.treesitter')
 require('plugins.nvimtree')
 require('plugins.gitsigns')
 require('plugins.snippets')
+require('plugins.telescope')
+require('plugins.colorizer')
+require('plugins.treesitter')
 require('plugins.bufferline')
 require('plugins.statusline')
 require('plugins.toggleterm')
-require('plugins.telescope')
 
 -- Keymap
 require('settings.keymap')

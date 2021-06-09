@@ -51,6 +51,13 @@ return require('packer').startup {
     use 'SirVer/ultisnips'
     use 'fhill2/telescope-ultisnips.nvim'
 
+    -- Motions
+    use 'nacro90/numb.nvim'
+    use 'justinmk/vim-sneak'
+    use 'mg979/vim-visual-multi'
+    use 'haya14busa/vim-asterisk'
+    use 'kevinhwang91/nvim-hlslens'
+
     -- Git
     use 'lewis6991/gitsigns.nvim'
     use 'kdheepak/lazygit.nvim'
