@@ -87,3 +87,5 @@ keymap('n', '<Leader>ss', '<cmd>SSave<CR>')
 keymap('n', '<Leader>sl', '<cmd>SLoad<CR>')
 keymap('n', '<Leader>sd', '<cmd>SDelete<CR>')
 
+-- Glow (npxbr/glow.nvim)
+keymap('n', '<Leader>mp', '<cmd>Glow<CR>')

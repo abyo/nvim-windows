@@ -6,8 +6,9 @@ Installation instruction can be found [on the wiki](https://github.com/abyo/nvim
   - [x] Installation (Windows)
   - [x] Keymaps
   - [ ] Snippets
-- [x] Switch theme/statusline plugin
+- [ ] Switch theme/statusline plugin
   - [x] Change theme to gruvbox
+  - [ ] Change statusline plugin (feline)
   - [x] Add comment code to switch to onedark
 - [x] Change git wrapper (lazygit)
 - [ ] Add whichkey plugin/config

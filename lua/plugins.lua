@@ -58,16 +58,15 @@ return require('packer').startup {
 
     -- UI
     use 'romgrk/barbar.nvim'
-    -- use 'joshdick/onedark.vim'  -- Uncomment this to change theme
     use 'hoob3rt/lualine.nvim'
+    -- use 'joshdick/onedark.vim'  -- Uncomment this to change theme
     use 'sainnhe/gruvbox-material' -- Comment this if you change theme
     use 'kyazdani42/nvim-tree.lua'
     use 'akinsho/nvim-toggleterm.lua'
     use { 'lukas-reineke/indent-blankline.nvim', branch = 'lua' }
 
-    -- use 'famiu/feline.nvim'
-
     -- General plugins
+    use 'npxbr/glow.nvim'
     use 'mhinz/vim-startify'
     use 'b3nj5m1n/kommentary'
     use 'norcalli/nvim-colorizer.lua'
