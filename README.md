@@ -2,17 +2,13 @@ Installation instruction can be found [on the wiki](https://github.com/abyo/nvim
 
 ## ToDo
 
-- [ ] Add wiki pages (how to add keymaps, plugins and !snippets!)
+- [ ] Add wiki pages (how to add keymaps, plugins and snippets)
   - [x] Installation (Windows)
   - [x] Keymaps
   - [ ] Snippets
-- [ ] Switch theme/statusline plugin
-  - [x] Change theme to gruvbox
-  - [ ] Change statusline plugin (feline)
-  - [x] Add comment code to switch to onedark
-- [x] Change git wrapper (lazygit)
-- [ ] Add whichkey plugin/config
-- [x] Check todo comments
-- [ ] Finish generic config
+- [ ] Finalize generic config
+  - [ ] Add generic comments to separate
+  - [ ] Check all todos
+- [ ] Complete README
 
 Terminal used [is Alacritty](https://github.com/abyo/nvim-windows/wiki/Alacritty).
