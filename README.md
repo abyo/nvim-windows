@@ -1,3 +1,5 @@
+![logo](/screenshots/logo.png)
+
 Installation instruction can be found [on the wiki](https://github.com/abyo/nvim-windows/wiki/Windows-Installation). Keymaps can be found [on the wiki aswell](https://github.com/abyo/nvim-windows/wiki/Keymaps).
 
 Considering naming the project `vim-multi-config`.
@@ -8,9 +10,6 @@ Considering naming the project `vim-multi-config`.
   - [x] Installation (Windows)
   - [x] Keymaps
   - [ ] Snippets
-- [ ] Finalize generic config
-  - [ ] Add generic comments to separate
-  - [ ] Check all todos
 - [ ] Complete README
 
 Terminal used [is Alacritty](https://github.com/abyo/nvim-windows/wiki/Alacritty).

@@ -64,7 +64,7 @@ keymap('n', '<C-b>', '<cmd>NvimTreeToggle<CR>')
 keymap('n', '<Leader>c', 'gcc', { noremap = false })
 keymap('v', '<Leader>c', 'gc<BAR><Esc>', { noremap = false })
 
--- Git (tpope/fugitive)
+-- Git (kdheepak/lazygit.nvim)
 keymap('n', '<Leader>gs', '<cmd>LazyGit<CR>', { noremap = false })
 
 -- Telescope (nvim-telescope/telescope.nvim)
