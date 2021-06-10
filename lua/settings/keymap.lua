@@ -65,12 +65,6 @@ keymap('n', '<Leader>c', 'gcc', { noremap = false })
 keymap('v', '<Leader>c', 'gc<BAR><Esc>', { noremap = false })
 
 -- Git (tpope/fugitive)
-keymap('n', '<Leader>gs', '<cmd>G<CR>', { noremap = false })
-keymap('n', '<Leader>ga', '<cmd>Git add .<CR>', { noremap = false })
-keymap('n', '<Leader>gl', '<cmd>Git log<CR>', { noremap = false })
-keymap('n', '<Leader>gc', '<cmd>Git commit<CR>', { noremap = false })
-keymap('n', '<Leader>gph', '<cmd>Git push<CR>', { noremap = false })
-keymap('n', '<Leader>gpl', '<cmd>Git pull<CR>', { noremap = false })
 keymap('n', '<Leader>gs', '<cmd>LazyGit<CR>', { noremap = false })
 
 -- Telescope (nvim-telescope/telescope.nvim)
