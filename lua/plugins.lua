@@ -42,7 +42,6 @@ return require('packer').startup {
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
     -- Telescope
-    use 'pwntester/octo.nvim'
     use 'nvim-telescope/telescope.nvim'
     use 'nvim-telescope/telescope-project.nvim'
     use 'nvim-telescope/telescope-fzy-native.nvim'
