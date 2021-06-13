@@ -46,8 +46,8 @@ keymap('v', 'J', ":m '>+1<CR>gv=gv")
 keymap('v', 'K', ":m '<-2<CR>gv=gv")
 
 -- Indenting in visual mode
-keymap('x', '<s-tab>', '<gv')
-keymap('x', '<tab>', '>gv')
+keymap('v', '<', '<gv')
+keymap('v', '>', '>gv')
 
 -- Delete line in visual
 keymap('x', 'd', '"_d')
