@@ -82,4 +82,16 @@ return require('packer').startup {
     -- Optional plugins
     use 'wakatime/vim-wakatime'
     use { 'andweeb/presence.nvim', config = function() require('presence'):setup({}) end }
+
+    -- +-+-+-+-+-+-+-+-+-+-+
+    -- |J|a|v|a|S|c|r|i|p|t|
+    -- +-+-+-+-+-+-+-+-+-+-+
+
+    -- Javascript - LSP/Linters
+    use 'neovim/nvim-lspconfig'
+    use 'onsails/lspkind-nvim'
+    use 'hrsh7th/nvim-compe'
+
+    -- Javascript - Formatting
+    use 'windwp/nvim-autopairs'
 end }

@@ -21,3 +21,6 @@ require('plugins.toggleterm')
 
 -- Keymap
 require('settings.keymap')
+
+-- Language support
+require('languages/javascript')

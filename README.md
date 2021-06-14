@@ -38,6 +38,13 @@ ToDo's for both generic and languages config
   - [x] Keymaps
   - [ ] Snippets
 - [ ] Add new screenshots for README
+- [ ] Move compe (autocompletion) to generic config
 - [ ] Complete README
 
-Didn't start language support yet so no todos.
+### Javascript
+
+- [ ] Add keymaps for better navigation
+- [ ] Add more features
+  - [ ] Debugging
+  - [ ] Some snippets
+  - [ ] Linting
