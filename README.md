@@ -38,7 +38,8 @@ ToDo's for both generic and languages config
   - [x] Keymaps
   - [ ] Snippets
 - [ ] Add new screenshots for README
-- [ ] Move compe (autocompletion) to generic config
+- [x] Move compe (autocompletion) to generic config
+- [ ] Move single setup lines to plugin file
 - [ ] Complete README
 
 ### Javascript

@@ -18,9 +18,10 @@ require('plugins.treesitter')
 require('plugins.bufferline')
 require('plugins.statusline')
 require('plugins.toggleterm')
-
--- Keymap
-require('settings.keymap')
+require('plugins.compe')
 
 -- Language support
 require('languages/javascript')
+
+-- Keymap
+require('settings.keymap')
