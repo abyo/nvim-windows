@@ -39,6 +39,7 @@ ToDo's for both generic and languages config
   - [ ] Snippets
 - [ ] Add new screenshots for README
 - [x] Move compe (autocompletion) to generic config
+- [ ] Add whichkey plugin
 - [ ] Move single setup lines to plugin file
 - [ ] Complete README
 

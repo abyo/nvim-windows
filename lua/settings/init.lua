@@ -5,7 +5,8 @@ function opt(scope, key, value)
   end
 end
 
-vim.g.mapleader = ' '
+vim.g.mapleader = ' '                    -- Leaderkey shortcut
+vim.cmd('set shortmess+=c')              -- Remove pattern not found compe message
 
 opt('wo', 'number', true)                -- Show absolute line number
 opt('wo', 'relativenumber', true)        -- Show line number relative to the cursor's current position
@@ -34,7 +35,7 @@ opt('o', 'concealcursor', 'i')           -- Can conceal cursor in insert mode
 opt('o', 'splitright', true)             -- Vertical splits will automatically be to the right
 opt('o', 'splitbelow', true)             -- Horizontal splits will automatically be below
 opt('o', 'inccommand', 'nosplit')        -- Show the effects of a command incrementally
-opt('o', 'tagcase', 'smart')             -- How case is handled when searching the tags file
+opt('o', 'tagcase', 'smart')             -- How case is handled when searching tags files
 opt('o', 'updatetime', 300)              -- How many ms until the swap file will be written to disk
 opt('o', 'undofile', true)               -- Saves undo history to an undo file
 opt('o', 'swapfile', false)              -- Don't use swapfile for the current buffer
@@ -54,6 +55,3 @@ opt('o', 'clipboard', 'unnamedplus')     -- Copy paste between vim and everythin
 
 -- Option settings for diff mode
 opt('o', 'diffopt', vim.o.diffopt..',vertical')
-
--- Program to use for the :grep command (may need ripgrep installed on the machine to work)
-opt('o', 'grepprg', 'rg --smart-case --color=never --no-heading -H -n --column')
