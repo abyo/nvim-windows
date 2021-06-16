@@ -73,9 +73,12 @@ keymap('n', '<Leader>bu', '<cmd>Telescope buffers<CR>')
 keymap('n', '<Leader>f', '<cmd>Telescope live_grep<CR>')
 
 -- Terminal (voldikss/vim-floaterm)
-keymap('n', '<Leader>tn', '<cmd>FloatermNew<CR>')
+keymap('n', '<Leader>tn', '<cmd>FloatermNew --height=0.9 --width=0.9<CR>')
 keymap('n', '<Leader>tt', '<cmd>FloatermToggle<CR>')
 keymap('t', '<Leader>tt', '<cmd>FloatermToggle<CR>')
+keymap('t', '<Leader>tk', '<cmd>FloatermKill<CR>')
+keymap('t', '<Leader>tn', '<cmd>FloatermNext<CR>')
+keymap('t', '<Leader>tp', '<cmd>FloatermPrev<CR>')
 
 -- Starfity (mhinz/vim-startify)
 keymap('n', '<Leader>ss', '<cmd>SSave<CR>')
