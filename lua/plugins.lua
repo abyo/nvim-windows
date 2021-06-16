@@ -41,11 +41,6 @@ return require('packer').startup {
     use 'andymass/vim-matchup'
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
-    -- Telescope
-    use 'nvim-telescope/telescope.nvim'
-    use 'nvim-telescope/telescope-project.nvim'
-    use 'nvim-telescope/telescope-fzy-native.nvim'
-
     -- LSP & Autocomplete
     use 'neovim/nvim-lspconfig'
     use 'onsails/lspkind-nvim'
@@ -72,6 +67,7 @@ return require('packer').startup {
     use 'hoob3rt/lualine.nvim'
     use 'kyazdani42/nvim-tree.lua'
     use 'akinsho/nvim-toggleterm.lua'
+    use 'nvim-telescope/telescope.nvim'
     use { 'lukas-reineke/indent-blankline.nvim', branch = 'lua' }
 
     -- Theme
