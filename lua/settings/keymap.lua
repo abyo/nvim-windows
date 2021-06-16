@@ -85,7 +85,6 @@ keymap('n', '<Leader>sd', '<cmd>SDelete<CR>')
 keymap('n', '<Leader>mp', '<cmd>Glow<CR>')
 
 -- Compe (hrsh7th/nvim-compe)
-
 function _G.smart_tab()
   return vim.fn.pumvisible() == 1 and t'<C-n>' or t'<Tab>'
 end

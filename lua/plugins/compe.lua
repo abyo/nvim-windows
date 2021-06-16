@@ -2,6 +2,8 @@ vim.api.nvim_exec([[
 " autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 ]], true)
 
+require('lspkind').init()
+
 require'compe'.setup {
   enabled = true,
   debug = false,

@@ -46,6 +46,11 @@ return require('packer').startup {
     use 'nvim-telescope/telescope-project.nvim'
     use 'nvim-telescope/telescope-fzy-native.nvim'
 
+    -- LSP & Autocomplete
+    use 'neovim/nvim-lspconfig'
+    use 'onsails/lspkind-nvim'
+    use 'hrsh7th/nvim-compe'
+
     -- Snippets
     use 'SirVer/ultisnips'
     use 'fhill2/telescope-ultisnips.nvim'
@@ -65,11 +70,13 @@ return require('packer').startup {
     -- UI
     use 'romgrk/barbar.nvim'
     use 'hoob3rt/lualine.nvim'
-    -- use 'joshdick/onedark.vim'  -- Uncomment this to change theme
-    use 'sainnhe/gruvbox-material' -- Comment this if you change theme
     use 'kyazdani42/nvim-tree.lua'
     use 'akinsho/nvim-toggleterm.lua'
     use { 'lukas-reineke/indent-blankline.nvim', branch = 'lua' }
+
+    -- Theme
+    -- use 'joshdick/onedark.vim'  -- Uncomment this to change theme
+    use 'sainnhe/gruvbox-material' -- Comment this if you change theme
 
     -- General plugins
     use 'npxbr/glow.nvim'
@@ -87,11 +94,5 @@ return require('packer').startup {
     -- |J|a|v|a|S|c|r|i|p|t|
     -- +-+-+-+-+-+-+-+-+-+-+
 
-    -- Javascript - LSP/Linters
-    use 'neovim/nvim-lspconfig'
-    use 'onsails/lspkind-nvim'
-    use 'hrsh7th/nvim-compe'
-
-    -- Javascript - Formatting
     use 'windwp/nvim-autopairs'
 end }
