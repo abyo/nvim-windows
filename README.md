@@ -27,26 +27,4 @@ README file in pause until first language support.
 - Keymaps can be found [on the wiki aswell](https://github.com/abyo/nvim-windows/wiki/Keymaps).
 - Terminal used [is Alacritty](https://github.com/abyo/nvim-windows/wiki/Alacritty).
 
-## ToDo
-
-ToDo's for both generic and languages config
-
-### Generic
-
-- [ ] Add wiki pages (how to add keymaps, plugins and snippets)
-  - [x] Installation (Windows)
-  - [x] Keymaps
-  - [ ] Snippets
-- [ ] Add new screenshots for README
-- [x] Move compe (autocompletion) to generic config
-- [ ] Add whichkey plugin
-- [ ] Move single setup lines to plugin file
-- [ ] Complete README
-
-### Javascript
-
-- [ ] Add keymaps for better navigation
-- [ ] Add more features
-  - [ ] Debugging
-  - [ ] Some snippets
-  - [ ] Linting
+Todos are moved [to the wiki](https://github.com/abyo/nvim-windows/wiki/ToDo) until first release.
