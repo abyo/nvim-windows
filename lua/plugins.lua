@@ -65,8 +65,8 @@ return require('packer').startup {
     -- UI
     use 'romgrk/barbar.nvim'
     use 'hoob3rt/lualine.nvim'
+    use 'voldikss/vim-floaterm'
     use 'kyazdani42/nvim-tree.lua'
-    use 'akinsho/nvim-toggleterm.lua'
     use 'nvim-telescope/telescope.nvim'
     use { 'lukas-reineke/indent-blankline.nvim', branch = 'lua' }
 

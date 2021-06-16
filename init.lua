@@ -17,7 +17,6 @@ require('plugins.colorizer')
 require('plugins.treesitter')
 require('plugins.bufferline')
 require('plugins.statusline')
-require('plugins.toggleterm')
 require('plugins.compe')
 
 -- Language support

@@ -72,9 +72,10 @@ keymap('n', '<Leader>p', '<cmd>Telescope find_files<CR>')
 keymap('n', '<Leader>bu', '<cmd>Telescope buffers<CR>')
 keymap('n', '<Leader>f', '<cmd>Telescope live_grep<CR>')
 
--- Terminal (akinsho/nvim-toggleterm.lua)
-keymap('n', '<Leader>tt', '<cmd>ToggleTerm<CR>')
-keymap('t', '<Leader>tt', '<cmd>ToggleTerm<CR>')
+-- Terminal (voldikss/vim-floaterm)
+keymap('n', '<Leader>tn', '<cmd>FloatermNew<CR>')
+keymap('n', '<Leader>tt', '<cmd>FloatermToggle<CR>')
+keymap('t', '<Leader>tt', '<cmd>FloatermToggle<CR>')
 
 -- Starfity (mhinz/vim-startify)
 keymap('n', '<Leader>ss', '<cmd>SSave<CR>')
