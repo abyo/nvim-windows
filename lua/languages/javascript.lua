@@ -11,3 +11,4 @@ vim.cmd('sign define LspDiagnosticsSignHint text=')
 vim.cmd('setlocal omnifunc=v:lua.vim.lsp.omnifunc')
 
 require'lspconfig'.tsserver.setup{}
+

@@ -73,8 +73,8 @@ keymap('n', '<Leader>bu', '<cmd>Telescope buffers<CR>')
 keymap('n', '<Leader>f', '<cmd>Telescope live_grep<CR>')
 
 -- Terminal (akinsho/nvim-toggleterm.lua)
-keymap('n', '<Leader>t', '<cmd>ToggleTerm<CR>')
-keymap('t', '<Leader>t', '<cmd>ToggleTerm<CR>')
+keymap('n', '<Leader>tt', '<cmd>ToggleTerm<CR>')
+keymap('t', '<Leader>tt', '<cmd>ToggleTerm<CR>')
 
 -- Starfity (mhinz/vim-startify)
 keymap('n', '<Leader>ss', '<cmd>SSave<CR>')
