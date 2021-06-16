@@ -79,7 +79,6 @@ return require('packer').startup {
     use 'sainnhe/gruvbox-material' -- Comment this if you change theme
 
     -- General plugins
-    use 'npxbr/glow.nvim'
     use 'mhinz/vim-startify'
     use 'b3nj5m1n/kommentary'
     use 'norcalli/nvim-colorizer.lua'
@@ -88,7 +87,6 @@ return require('packer').startup {
 
     -- Optional plugins
     use 'wakatime/vim-wakatime'
-    use { 'andweeb/presence.nvim', config = function() require('presence'):setup({}) end }
 
     -- +-+-+-+-+-+-+-+-+-+-+
     -- |J|a|v|a|S|c|r|i|p|t|

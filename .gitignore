@@ -109,3 +109,4 @@ pack/
 plugin/
 .vscode
 ultisnips/
+lua-language-server/

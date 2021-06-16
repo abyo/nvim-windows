@@ -22,6 +22,7 @@ require('plugins.compe')
 
 -- Language support
 require('languages/javascript')
+require('languages/lua')
 
 -- Keymap
 require('settings.keymap')
