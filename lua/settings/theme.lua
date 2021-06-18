@@ -14,5 +14,3 @@ vim.cmd 'color gruvbox-material'
 
 -- Onedark theme
 -- vim.cmd[[colorscheme onedark]]
-
-

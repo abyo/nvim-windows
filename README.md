@@ -13,7 +13,7 @@
   <p></p>
 </div>
 
-![lazygit](/screenshots/lazygit.png)
+![Merged Screenshot](/screenshots/readme_screen.jpg)
 
 # Table of Contents <!-- omit in toc -->
 
@@ -22,7 +22,7 @@
 
 ## Introduction
 
-README file in pause until first language support.
+You can find more screenshots in the [screenshot folder](/screenshots/screens.md).
 
 - Keymaps can be found [on the wiki aswell](https://github.com/abyo/nvim-windows/wiki/Keymaps).
 - Terminal used [is Alacritty](https://github.com/abyo/nvim-windows/wiki/Alacritty).
