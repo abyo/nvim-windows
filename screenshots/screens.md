@@ -6,18 +6,18 @@
 
 ## Themes
 
-![gruvbox](/gruvbox.png)
+![gruvbox](gruvbox.png)
 
-![onedark](/onedark.png)
+![onedark](onedark.png)
 
 ## Startify
 
-![startify](/startify.png)
+![startify](startify.png)
 
 ## Telescope
 
-![Telescope](/telescope.png)
+![Telescope](telescope.png)
 
 ## Lazygit
 
-![lazygit](/lazygit.png)
+![lazygit](lazygit.png)
