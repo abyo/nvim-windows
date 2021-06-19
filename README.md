@@ -24,7 +24,7 @@
 
 You can find more screenshots in the [screenshot folder](/screenshots/screens.md).
 
-- Keymaps can be found [on the wiki aswell](https://github.com/abyo/nvim-windows/wiki/Keymaps).
-- Terminal used [is Alacritty](https://github.com/abyo/nvim-windows/wiki/Alacritty).
+- Keymaps can be found [on the wiki](https://github.com/abyo/nvim-windows/wiki/Keymaps).
+- Terminal used [is Alacritty, config is on the wiki aswell](https://github.com/abyo/nvim-windows/wiki/Alacritty).
 
 Todos are moved [to the wiki](https://github.com/abyo/nvim-windows/wiki/ToDo) until first release.
