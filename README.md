@@ -18,7 +18,7 @@
 # Table of Contents <!-- omit in toc -->
 
 - [Introduction](#introduction)
-- [ToDo](#todo)
+- [Features](#features)
 
 ## Introduction
 
@@ -28,3 +28,16 @@ You can find more screenshots in the [screenshot folder](/screenshots/screens.md
 - Terminal used [is Alacritty, config is on the wiki aswell](https://github.com/abyo/nvim-windows/wiki/Alacritty).
 
 Todos are moved [to the wiki](https://github.com/abyo/nvim-windows/wiki/ToDo) until first release.
+
+## Features
+
+- Package management system in LUA (Packer)
+- Written in LUA and works with future nVim versions
+- Great support for version control
+- Clean look to the editor w/ multiple themes
+- Code completion (compe)
+- Multiple language support
+- Native language support (lsp)
+- Faster navigation with telescope, hlslens and numb
+- Better syntax highlighting with treesitter
+- Terminal integration
