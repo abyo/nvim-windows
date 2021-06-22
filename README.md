@@ -15,21 +15,23 @@
 
 ![Merged Screenshot](/screenshots/readme_screen.jpg)
 
+You can find more screenshots in the [screenshot folder](/screenshots/screens.md).
+
 # Table of Contents <!-- omit in toc -->
 
 - [Introduction](#introduction)
-- [Features](#features)
+  - [Features](#features)
+  - [Keymaps](#keymaps)
+- [ToDos](#todos)
+  - [Generic](#generic)
+  - [Lua](#lua)
+  - [Javascript](#javascript)
 
 ## Introduction
 
-You can find more screenshots in the [screenshot folder](/screenshots/screens.md).
+- Terminal I'm using [is Alacritty, config can be found on the wiki aswell](https://github.com/abyo/nvim-windows/wiki/Alacritty).
 
-- Keymaps can be found [on the wiki](https://github.com/abyo/nvim-windows/wiki/Keymaps).
-- Terminal used [is Alacritty, config is on the wiki aswell](https://github.com/abyo/nvim-windows/wiki/Alacritty).
-
-Todos are moved [to the wiki](https://github.com/abyo/nvim-windows/wiki/ToDo) until first release.
-
-## Features
+### Features
 
 - Package management system in LUA (Packer)
 - Written in LUA and works with future nVim versions
@@ -41,3 +43,39 @@ Todos are moved [to the wiki](https://github.com/abyo/nvim-windows/wiki/ToDo) un
 - Faster navigation with telescope, hlslens and numb
 - Better syntax highlighting with treesitter
 - Terminal integration
+
+### Keymaps
+
+Keymaps can be found [on the wiki](https://github.com/abyo/nvim-windows/wiki/Keymaps).
+
+## ToDos
+
+If you want any features added to the config, [make an issue](https://github.com/abyo/nvim-windows/issues).
+
+### Generic
+
+- [ ] Add wiki pages (how to add keymaps, plugins and snippets)
+  - [x] Installation (Windows)
+  - [x] Keymaps
+  - [x] ToDos
+  - [ ] Snippets
+- [x] Add new screenshots for README
+- [ ] Add more colorschemes
+- [ ] Add an installation script
+- [ ] Add an installation page for mac and linux
+- [ ] Add a language support table
+- [ ] Add whichkey plugin
+- [ ] Move single setup lines to a plugin.lua file
+- [ ] Add keymaps to autocomplete for better navigation
+
+### Lua
+
+- [ ] Debugging
+- [ ] Some snippets
+- [ ] Linting
+
+### Javascript
+
+- [ ] Debugging
+- [ ] Some snippets
+- [ ] Linting
