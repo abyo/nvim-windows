@@ -25,6 +25,7 @@ You can find more screenshots in the [screenshot folder](/screenshots/screens.md
   - [Features](#features)
   - [Keymaps](#keymaps)
   - [Terminal](#terminal)
+- [Installation & prerequisites](#installation--prerequisites)
 - [ToDos](#todos)
   - [Generic](#generic)
   - [Lua](#lua)
@@ -34,12 +35,12 @@ You can find more screenshots in the [screenshot folder](/screenshots/screens.md
 
 This config provides configuration files that take advantage of tree-sitter and language server protocol. I know that it's difficult to configure neoVim when you are just starting to use it, how time consuming it's to customize it to your needs and that's why my config exists.
 
-My goals for this project are:
+**My goals for this project are:**
 
 - Help the transition from VSCode into vim/neoVim
 - Give neoVim an initial configuration to start working in a stable and efficient development environment without spending a lot of time configuring everything
 - Make this config multi-platform compatible (espacially for windows users)
-- Make every language compatible with neoVim ([see wiki](https://github.com/abyo/nvim-windows/wiki/Language-supported))
+- Make every language compatible with neoVim ([see installation](#installation--prerequisites))
 
 If you want specific informations about the config, keep reading.
 
@@ -62,7 +63,19 @@ Keymaps can be found [on the wiki](https://github.com/abyo/nvim-windows/wiki/Key
 
 ### Terminal
 
-- Terminal I'm using [is Alacritty, config can be found on the wiki aswell](https://github.com/abyo/nvim-windows/wiki/Alacritty).
+I'm using [is Alacritty, config can be found on the wiki aswell](https://github.com/abyo/nvim-windows/wiki/Alacritty).
+
+## Installation & prerequisites
+
+Until I make a script to install the config, here's a link to the wiki for each platform.
+
+| Platform | Supported | Link |
+|:--------:|:---------:|------|
+|  Windows |     ✅    | [Link](https://github.com/abyo/nvim-windows/wiki/Windows-Installation) |
+|   macOs  |     ❌    | Link |
+|   Linux  |     ❌    | Link |
+
+The config might work on other distro but I didn't test yet.
 
 ## ToDos
 
