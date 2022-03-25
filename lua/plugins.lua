@@ -1,92 +1,88 @@
-local packer_exists = pcall(vim.cmd, [[packadd packer.nvim]])
+local fn = vim.fn
+local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
 
--- Check if packer exist 
-if not packer_exists then
-  if vim.fn.input("Download Packer? (y for yes)") ~= "y" then
-    return
-  end
+if fn.empty(fn.glob(install_path)) > 0 then
+  PACKER_BOOTSTRAP = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+end
 
-  print("Downloading packer.nvim...")
-  local directory = string.format(
-    '%s/site/pack/packer/opt/',
-    vim.fn.stdpath('data')
-  )
+-- Autocommand to reload plugins.lua on save
+vim.cmd [[
+  augroup packer_user_config
+    autocmd!
+    autocmd BufWritePost plugins.lua source <afile> | PackerSync
+  augroup end
+]]
 
-  vim.fn.mkdir(directory, 'p')
-
-  local out = vim.fn.system(string.format(
-    'git clone %s %s',
-    'https://github.com/wbthomason/packer.nvim',
-    directory .. '/packer.nvim'
-  ))
-
-  print(out)
-  print("Downloaded packer.nvim")
-  print("Reopen NVIM and run :PackerSync twice")
-
+local status_ok, packer = pcall(require, "packer")
+if not status_ok then
   return
 end
 
-return require('packer').startup {
-  function(use)
-    -- Packer can manage itself as an optional plugin
-    use { 'wbthomason/packer.nvim', opt = true }
+packer.init {
+  display = {
+    open_fn = function()
+      return require("packer.util").float { border = "rounded" }
+    end,
+  },
+}
 
-    -- Dependencies
-    use 'nvim-lua/popup.nvim'
-    use 'nvim-lua/plenary.nvim'
-    use 'kyazdani42/nvim-web-devicons'
+return packer.startup(function(use)
+  -- Dependencies
+  use "wbthomason/packer.nvim"                        -- Packer manage itself
+  use "nvim-lua/popup.nvim"                           -- An implementation of the Popup API from vim in Neovim
+  use "nvim-lua/plenary.nvim"                         -- Useful lua functions used by lots of plugins
+  use 'kyazdani42/nvim-web-devicons'                  -- Adds file type icons to Vim plugins
 
-    -- Treesitter
-    use 'andymass/vim-matchup'
-    use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+  -- General
+  use "windwp/nvim-autopairs"                         -- Autopairs, integrates with both cmp and treesitter
+  use "b3nj5m1n/kommentary"                           -- Commenting plugin
+  use "akinsho/bufferline.nvim"                       -- Snazzy bufferline
+  use "moll/vim-bbye"                                 -- Bclose.vim but rewritten and well maintained.
+  use 'nacro90/numb.nvim'                             -- Easy peek lines
+  use 'mg979/vim-visual-multi'                        -- Multiple cursors
+  use 'nvim-lualine/lualine.nvim'                     -- Easy to configure neovim statusline
+  use "akinsho/toggleterm.nvim"                       -- Easily manage multiple terminal windows
+  use 'lewis6991/impatient.nvim'                      -- Improve startup time
+  use "lukas-reineke/indent-blankline.nvim"           -- Indent guides
+  use 'wakatime/vim-wakatime'                         -- Wakatime (very optional)
 
-    -- LSP & Autocomplete
-    use 'neovim/nvim-lspconfig'
-    use 'onsails/lspkind-nvim'
-    use 'hrsh7th/nvim-compe'
+  -- Startify
+  use 'goolord/alpha-nvim'                            -- Greeter like startify
+  use "antoinemadec/FixCursorHold.nvim"               -- Fix lsp doc highlight
 
-    -- Snippets
-    use 'SirVer/ultisnips'
-    use 'fhill2/telescope-ultisnips.nvim'
+  -- Git
+  use "lewis6991/gitsigns.nvim"                       -- Git integration
 
-    -- Motions
-    use 'nacro90/numb.nvim'
-    use 'justinmk/vim-sneak'
-    use 'mg979/vim-visual-multi'
-    use 'haya14busa/vim-asterisk'
-    use 'kevinhwang91/nvim-hlslens'
+  -- Colorscheme
+  use 'sainnhe/gruvbox-material'                      -- Gruvbox with Material Palette
 
-    -- Git
-    use 'lewis6991/gitsigns.nvim'
-    use 'kdheepak/lazygit.nvim'
-    use 'sindrets/diffview.nvim'
+  -- Auto-completion
+  use "hrsh7th/nvim-cmp"                              -- Completion (cmp) plugin
+  use "hrsh7th/cmp-buffer"                            -- Cmp source for buffer words
+  use "hrsh7th/cmp-path"                              -- Cmp source for path
+  use "hrsh7th/cmp-nvim-lsp"                          -- Cmp source for LSP client
+  use "hrsh7th/cmp-nvim-lua"                          -- Cmp source for nvim lua
+  use "hrsh7th/cmp-cmdline"                           -- Cmp source for vim's cmdline
+  use "saadparwaiz1/cmp_luasnip"                      -- Luasnip completion source
 
-    -- UI
-    use 'romgrk/barbar.nvim'
-    use 'hoob3rt/lualine.nvim'
-    use 'voldikss/vim-floaterm'
-    use 'kyazdani42/nvim-tree.lua'
-    use 'nvim-telescope/telescope.nvim'
-    use { 'lukas-reineke/indent-blankline.nvim', branch = 'lua' }
+  -- Snippets
+  use "L3MON4D3/LuaSnip"                              -- Snippet engine
+  use "rafamadriz/friendly-snippets"                  -- Preconfigured snippets
 
-    -- Theme
-    -- use 'joshdick/onedark.vim'  -- Uncomment this to change theme
-    use 'sainnhe/gruvbox-material' -- Comment this if you change theme
+  -- LSP
+  use "neovim/nvim-lspconfig"                         -- Enable native LSP
+  use "williamboman/nvim-lsp-installer"               -- Language server installer
+  use "jose-elias-alvarez/null-ls.nvim"               -- Inject LSP diagnostics, code actions ...
 
-    -- General plugins
-    use 'mhinz/vim-startify'
-    use 'b3nj5m1n/kommentary'
-    use 'norcalli/nvim-colorizer.lua'
-    use 'jeffkreeftmeijer/vim-numbertoggle'
-    use { 'folke/todo-comments.nvim', config = function() require('todo-comments').setup{} end }
+  -- Fzf
+  use 'kyazdani42/nvim-tree.lua'                      -- File explorer tree
+  use "nvim-telescope/telescope.nvim"                 -- Find, Filter, Preview, Pick. All lua, all the time.
+  use "ahmedkhalf/project.nvim"                       -- Project manager
 
-    -- Optional plugins
-    use 'wakatime/vim-wakatime'
+  -- Treesitter
+  use "nvim-treesitter/nvim-treesitter"               -- Treesitter configuration
 
-    -- +-+-+-+-+-+-+-+-+-+-+
-    -- |J|a|v|a|S|c|r|i|p|t|
-    -- +-+-+-+-+-+-+-+-+-+-+
-
-    use 'windwp/nvim-autopairs'
-end }
+  if PACKER_BOOTSTRAP then
+    require("packer").sync()
+  end
+end)

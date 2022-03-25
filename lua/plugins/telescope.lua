@@ -1,64 +1,65 @@
-require('telescope').setup{
+local status_ok, telescope = pcall(require, "telescope")
+if not status_ok then
+  return
+end
+
+local actions = require "telescope.actions"
+
+telescope.setup {
   defaults = {
-    prompt_prefix = "λ -> ",
-    selection_caret = "|> ",
+
+    prompt_prefix = " ",
+    selection_caret = " ",
+    path_display = { "smart" },
+
+    mappings = {
+      i = {
+        ["<C-n>"] = actions.cycle_history_next,
+        ["<C-p>"] = actions.cycle_history_prev,
+
+        ["<C-j>"] = actions.move_selection_next,
+        ["<C-k>"] = actions.move_selection_previous,
+
+        ["<CR>"] = actions.select_default,
+        ["<C-h>"] = actions.select_horizontal,
+        ["<C-v>"] = actions.select_vertical,
+        ["<C-t>"] = actions.select_tab,
+
+        ["<S-k>"] = actions.preview_scrolling_up,
+        ["<S-j>"] = actions.preview_scrolling_down,
+
+        ["<Tab>"] = actions.toggle_selection + actions.move_selection_worse,
+        ["<S-Tab>"] = actions.toggle_selection + actions.move_selection_better,
+        ["<C-q>"] = actions.send_to_qflist + actions.open_qflist,
+        ["<S-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
+        ["<C-l>"] = actions.complete_tag,
+        ["<C-_>"] = actions.which_key, -- keys from pressing <C-/>
+      },
+
+      n = {
+        ["<esc>"] = actions.close,
+        ["<CR>"] = actions.select_default,
+        ["<C-h>"] = actions.select_horizontal,
+        ["<C-v>"] = actions.select_vertical,
+        ["<C-t>"] = actions.select_tab,
+
+        ["<Tab>"] = actions.toggle_selection + actions.move_selection_worse,
+        ["<S-Tab>"] = actions.toggle_selection + actions.move_selection_better,
+        ["<C-q>"] = actions.send_to_qflist + actions.open_qflist,
+        ["<S-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
+
+        ["j"] = actions.move_selection_next,
+        ["k"] = actions.move_selection_previous,
+
+        ["gg"] = actions.move_to_top,
+        ["G"] = actions.move_to_bottom,
+
+        ["<S-k>"] = actions.preview_scrolling_up,
+        ["<S-j>"] = actions.preview_scrolling_down,
+
+        ["?"] = actions.which_key,
+      },
+    },
   },
-  extensions = {
-    fzy_native = {
-      override_generic_sorter = false,
-      override_file_sorter = true,
-    }
-  }
+  pickers = {}
 }
-
-require('telescope').load_extension('ultisnips')
-
--- Implement delta as previewer for diffs
-
-local previewers = require('telescope.previewers')
-local builtin = require('telescope.builtin')
-local M = {}
-
-local delta = previewers.new_termopen_previewer {
-  get_command = function(entry)
-    if entry.status == '??' or 'A ' then
-      return { 'git', '-c', 'core.pager=delta', '-c', 'delta.side-by-side=false', 'diff', entry.value }
-    end
-
-    return { 'git', '-c', 'core.pager=delta', '-c', 'delta.side-by-side=false', 'diff', entry.value .. '^!' }
-
-  end
-}
-
-M.my_git_commits = function(opts)
-  opts = opts or {}
-  opts.previewer = delta
-
-  builtin.git_commits(opts)
-end
-
-M.my_git_bcommits = function(opts)
-  opts = opts or {}
-  opts.previewer = delta
-
-  builtin.git_bcommits(opts)
-end
-
-M.my_git_status = function(opts)
-  opts = opts or {}
-  opts.previewer = delta
-
-  builtin.git_status(opts)
-end
-
-M.my_note = function()
-  builtin.live_grep { prompt_title = ' Note ', cwd = '~/Note' }
-end
-
-M.project_files = function()
-  local opts = {}
-  local ok = pcall(require'telescope.builtin'.git_files, opts)
-  if not ok then require'telescope.builtin'.find_files(opts) end
-end
-
-return M

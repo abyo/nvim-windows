@@ -63,7 +63,7 @@ Keymaps can be found [on the wiki](https://github.com/abyo/nvim-windows/wiki/Key
 
 ### Terminal
 
-I'm using [is Alacritty, config can be found on the wiki aswell](https://github.com/abyo/nvim-windows/wiki/Alacritty).
+I'm using [Alacritty as a terminal, config can be found on the wiki aswell](https://github.com/abyo/nvim-windows/wiki/Alacritty).
 
 ## Installation & prerequisites
 

@@ -1,27 +1,21 @@
--- Plugins
-require('plugins')
+-- Setting files
+require "settings.options"
+require "settings.keymaps"
 
--- Default configuration
-require('settings')
-require('settings.theme')
-
--- Plugins configuration
-require('plugins.numb')
-require('plugins.vmlens')
-require('plugins.startify')
-require('plugins.nvimtree')
-require('plugins.gitsigns')
-require('plugins.snippets')
-require('plugins.telescope')
-require('plugins.colorizer')
-require('plugins.treesitter')
-require('plugins.bufferline')
-require('plugins.statusline')
-require('plugins.compe')
-
--- Language support
-require('languages/javascript')
-require('languages/lua')
-
--- Keymap
-require('settings.keymap')
+-- Plugin files
+require "plugins"
+require "plugins.impatient"
+require "plugins.colorscheme"
+require "plugins.cmp"
+require "plugins.lsp"
+require "plugins.telescope"
+require "plugins.treesitter"
+require "plugins.autopairs"
+require "plugins.gitsigns"
+require "plugins.nvim-tree"
+require "plugins.bufferline"
+require "plugins.lualine"
+require "plugins.toggleterm"
+require "plugins.project"
+require "plugins.indentline"
+require "plugins.alpha"
