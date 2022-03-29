@@ -57,6 +57,7 @@ return packer.startup(function(use)
   use 'sainnhe/gruvbox-material'                      -- Gruvbox with Material Palette
 
   -- Auto-completion
+  use "github/copilot.vim"                            -- Github Copilot
   use "hrsh7th/nvim-cmp"                              -- Completion (cmp) plugin
   use "hrsh7th/cmp-buffer"                            -- Cmp source for buffer words
   use "hrsh7th/cmp-path"                              -- Cmp source for path
