@@ -11,6 +11,7 @@ local diagnostics = null_ls.builtins.diagnostics
 null_ls.setup {
   debug = false,
   sources = {
+    formatting.rustfmt,
     formatting.prettier,
     diagnostics.eslint,
   },

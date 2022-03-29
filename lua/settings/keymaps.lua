@@ -36,11 +36,11 @@ keymap('n', '<Leader>bac', ':silent w <BAR> :silent %bd <BAR> e#<CR>')
 keymap('n', '<C-b>', ':NvimTreeToggle<cr>') -- Open explorer tree
 
 keymap("n", "<C-p>", "<cmd>Telescope find_files<cr>")     -- Find specific files
-keymap("n", "<C-t>", "<cmd>Telescope live_grep<cr>")      -- Find specific text
+keymap("n", "<leader>p", "<cmd>Telescope live_grep<cr>")      -- Find specific text
 keymap("n", "<leader>tp", "<cmd>Telescope projects<cr>")  -- List of projects
 
-keymap("n", "<leader>f", ":Format<cr>")                 -- Format document (null-ls)
-keymap("n", "<leader>lg", ":lua _LAZYGIT_TOGGLE()<cr>") -- Open lazygit window
+keymap("n", "<leader>f", ":lua vim.lsp.buf.formatting()<cr>") -- Format document (null-ls)
+keymap("n", "<leader>lg", ":lua _LAZYGIT_TOGGLE()<cr>")       -- Open lazygit window
 
 ------------
 -- Editor --
