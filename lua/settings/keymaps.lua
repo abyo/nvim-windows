@@ -55,17 +55,28 @@ keymap('i', '<C-s>', '<C-o>:w<CR>') -- Save
 keymap('n', '<C-s>', ':w<CR>')      -- Save
 keymap('n', '<C-q>', ':wq!<CR>')    -- Save and exit
 
+keymap('n', 'n', 'nzzzv') -- Better movement for next command
+keymap('n', 'N', 'Nzzzv') -- Better movement for next command
+
+keymap('i', ',', ',<C-g>u') -- Undo break points
+keymap('i', '.', '.<C-g>u') -- Undo break points
+keymap('i', '!', '!<C-g>u') -- Undo break points
+keymap('i', '?', '?<C-g>u') -- Undo break points
+
 keymap('v', '<C-c>', '"+y')      -- Copy
+keymap('n', 'Y', 'y$')           -- Copy line from cursor
 keymap('i', '<C-v>', '<Esc>"+p') -- Paste
 keymap('n', '<C-v>', '"+p')      -- Paste
 keymap("v", "<C-v>", '"_dP')     -- Paste
 
-keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi") -- Move line once in n mode (top)
-keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi") -- Move line once in n mode (bottom)
-keymap("x", "<A-j>", ":move '>+1<CR>gv-gv") -- Move line (top)
-keymap("x", "<A-k>", ":move '<-2<CR>gv-gv") -- Move line (bottom)
+keymap("n", "<leader>j", ":m .+1<CR>==")  -- Move line once in n mode (bottom)
+keymap("n", "<leader>k", ":m .-2<CR>==")  -- Move line once in n mode (top)
+keymap("i", "<C-j>", "<Esc>:m .+1<CR>==") -- Move line in n mode (bottom)
+keymap("i", "<C-k>", "<Esc>:m .-2<CR>==") -- Move line in n mode (top)
+keymap("v", "<A-j>", ":m '>+1<CR>gv=gv")  -- Move line (bottom)
+keymap("v", "<A-k>", ":m '<-2<CR>gv=gv")  -- Move line (top)
 
-keymap('v', '<', '<gv') -- Tab indentation
+keymap('v', '<', '<gv') -- Tab indentv=ion
 keymap('v', '>', '>gv') -- Tab indentation (reverse)
 
 keymap('x', 'd', '"_d') -- Delete a line in v mode
