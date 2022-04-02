@@ -36,7 +36,7 @@ keymap('n', '<Leader>bac', ':silent w <BAR> :silent %bd <BAR> e#<CR>')
 keymap('n', '<C-b>', ':NvimTreeToggle<cr>') -- Open explorer tree
 
 keymap("n", "<C-p>", "<cmd>Telescope find_files<cr>")     -- Find specific files
-keymap("n", "<leader>p", "<cmd>Telescope live_grep<cr>")      -- Find specific text
+keymap("n", "<leader>p", "<cmd>Telescope live_grep<cr>")  -- Find specific text
 keymap("n", "<leader>tp", "<cmd>Telescope projects<cr>")  -- List of projects
 
 keymap("n", "<leader>f", ":lua vim.lsp.buf.formatting()<cr>") -- Format document (null-ls)
@@ -48,8 +48,6 @@ keymap("n", "<leader>lg", ":lua _LAZYGIT_TOGGLE()<cr>")       -- Open lazygit wi
 
 keymap('i', 'jk', '<ESC>') -- Escape i mode
 keymap('i', 'kj', '<ESC>') -- Escape i mode
-keymap('v', 'jk', '<ESC>') -- Escape v mode
-keymap('v', 'kj', '<ESC>') -- Escape v mode
 
 keymap('i', '<C-s>', '<C-o>:w<CR>') -- Save
 keymap('n', '<C-s>', ':w<CR>')      -- Save
@@ -76,8 +74,8 @@ keymap("i", "<C-k>", "<Esc>:m .-2<CR>==") -- Move line in n mode (top)
 keymap("v", "<A-j>", ":m '>+1<CR>gv=gv")  -- Move line (bottom)
 keymap("v", "<A-k>", ":m '<-2<CR>gv=gv")  -- Move line (top)
 
-keymap('v', '<', '<gv') -- Tab indentv=ion
-keymap('v', '>', '>gv') -- Tab indentation (reverse)
+keymap('v', '<', '<gv') -- Better indentation with tab
+keymap('v', '>', '>gv') -- Better indentation with tab (reverse)
 
 keymap('x', 'd', '"_d') -- Delete a line in v mode
 
