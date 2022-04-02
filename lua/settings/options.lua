@@ -7,9 +7,9 @@ function opt(scope, key, value)
 end
 
 opt('wo', 'number', true)                -- Show absolute line number
-opt('wo', 'relativenumber', false)        -- Show line number relative to the cursor's current position
+opt('wo', 'relativenumber', false)       -- Show line number relative to the cursor's current position
 opt('wo', 'cursorline', true)            -- Highlight line on cursor's position
-opt('wo', 'wrap', false)                 -- Display long lines as just one line
+opt('wo', 'wrap', true)                  -- Display long lines as just one line
 opt('wo', 'linebreak', true)             -- Wrap long lines at a character in 'breakat'
 opt('wo', 'foldenable', false)           -- All folds are open
 opt('o', 'showmode', false)              -- Hide current mode like -- INSERT --

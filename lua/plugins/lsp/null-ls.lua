@@ -3,26 +3,22 @@ if not null_ls_status_ok then
   return
 end
 
--- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting
-local formatting = null_ls.builtins.formatting
--- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
-local diagnostics = null_ls.builtins.diagnostics
-
 null_ls.setup {
   on_attach = function(client)
     if client.resolved_capabilities.document_formatting then
       vim.cmd([[
         augroup LspFormatting
             autocmd! * <buffer>
-            autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()
+            autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting()
         augroup END
       ]])
     end
   end,
-  debug = false,
+  debug = true,
   sources = {
-    formatting.prettier,
-    diagnostics.eslint,
-    formatting.rustfmt,
+    null_ls.builtins.formatting.prettier,
+    null_ls.builtins.formatting.eslint,
+    null_ls.builtins.code_actions.eslint,
+    null_ls.builtins.formatting.rustfmt,
   },
 }
