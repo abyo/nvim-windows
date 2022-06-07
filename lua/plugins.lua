@@ -44,7 +44,6 @@ return packer.startup(function(use)
   use "akinsho/toggleterm.nvim"                       -- Easily manage multiple terminal windows
   use 'lewis6991/impatient.nvim'                      -- Improve startup time
   use "lukas-reineke/indent-blankline.nvim"           -- Indent guides
-  use 'wakatime/vim-wakatime'                         -- Wakatime (very optional)
 
   -- Startify
   use 'goolord/alpha-nvim'                            -- Greeter like startify
@@ -57,7 +56,6 @@ return packer.startup(function(use)
   use 'sainnhe/gruvbox-material'                      -- Gruvbox with Material Palette
 
   -- Auto-completion
-  use "github/copilot.vim"                            -- Github Copilot
   use "hrsh7th/nvim-cmp"                              -- Completion (cmp) plugin
   use "hrsh7th/cmp-buffer"                            -- Cmp source for buffer words
   use "hrsh7th/cmp-path"                              -- Cmp source for path
