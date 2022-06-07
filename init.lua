@@ -1,3 +1,9 @@
+local present, impatient = pcall(require, "impatient")
+
+if present then
+ impatient.enable_profile()
+end
+
 -- Setting files
 require "settings.options"
 require "settings.keymaps"
