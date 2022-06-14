@@ -26,4 +26,3 @@ require "plugins.project"
 require "plugins.indentline"
 require "plugins.alpha"
 
-vim.g.material_style = "darker"

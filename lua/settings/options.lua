@@ -6,9 +6,14 @@ function opt(scope, key, value)
   end
 end
 
+vim.g.encoding = "UTF-8"
+vim.g.material_style = "darker"
+vim.wo.colorcolumn = "80"                -- 右参考线
+
 opt('wo', 'number', true)                -- Show absolute line number
-opt('wo', 'relativenumber', false)       -- Show line number relative to the cursor's current position
+opt('wo', 'relativenumber', true)        -- Show line number relative to the cursor's current position
 opt('wo', 'cursorline', true)            -- Highlight line on cursor's position
+opt('wo', 'cursorcolumn', true)
 opt('wo', 'wrap', true)                  -- Display long lines as just one line
 opt('wo', 'linebreak', true)             -- Wrap long lines at a character in 'breakat'
 opt('wo', 'foldenable', false)           -- All folds are open
@@ -22,6 +27,7 @@ opt('o', 'showmatch', true)              -- Briefly jump to the matching bracket
 opt('o', 'matchtime', 0)                 -- Tenths of a second to show the matching paren
 opt('o', 'showtabline', 2)               -- Always show tabs
 opt('o', 'tabstop', 2)                   -- Insert 2 spaces for a tab
+opt('o', 'softtabstop', 2)
 opt('o', 'background', 'dark')           -- Tells vim that the background is dark
 opt('o', 'ttimeoutlen', 1000)            -- Time in ms to wait for a key code sequence to complete
 opt('o', 'termguicolors', true)          -- Check if terminal has 24-bit color support
@@ -54,6 +60,7 @@ opt('o', 'scrolloff', 8)                 -- Minimal number of screen lines to ke
 opt('o', 'sidescrolloff', 8)             -- Minimal number of screen columns to keep to the left and right of the cursor
 opt('o', 'sidescroll', 5)                -- Minimal number of columns to scroll horizontally
 opt('o', 'clipboard', 'unnamedplus')     -- Copy paste between vim and everything else
+opt('o', 'autoread', true)               -- 自动加载
 
 -- Option settings for diff mode
 opt('o', 'diffopt', vim.o.diffopt..',vertical')

@@ -12,6 +12,26 @@ vim.g.maplocalleader = ' '
 
 -- TODO: move 'doc' to github wiki
 
+-- 跳转到行尾
+keymap("v", "$", "g_")
+keymap("v", "g_", "$")
+keymap("n", "$", "g_")
+keymap("n", "g_", "$")
+
+-- 跳行浏览
+keymap("n", "<C-j>", "5j")
+keymap("n", "<C-k>", "5k")
+keymap("v", "<C-j>", "5j")
+keymap("v", "<C-k>", "5k")
+
+-- 上下移动选中文本
+keymap("v", "J", ":move '>+1<CR>gv-gv")
+keymap("v", "K", ":move '<-2<CR>gv-gv")
+
+--退出
+keymap("n", "qq", ":q!<CR>")
+keymap("n", "<leader>q", ":qa!<CR>")
+
 -----------------------
 -- Windows & buffers --
 -----------------------
