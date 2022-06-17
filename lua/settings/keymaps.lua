@@ -37,8 +37,6 @@ keymap("n", "<leader>q", ":qa!<CR>")
 -----------------------
 
 keymap('n', '<C-h>', '<C-w>h') -- Left slit
-keymap('n', '<C-j>', '<C-w>j') -- Top slit
-keymap('n', '<C-k>', '<C-w>k') -- Bot slit
 keymap('n', '<C-l>', '<C-w>l') -- Right Slit
 
 keymap('n', '<C-Up>', ':resize -2<CR>')             -- Top resize
