@@ -1,8 +1,16 @@
-local status_ok, _ = pcall(require, "lspconfig")
+local status_ok, nvim_lsp = pcall(require, "lspconfig")
 if not status_ok then
-	return
+  return
 end
 
 require("plugins.lsp.lsp-installer")
-require("plugins.lsp.handlers").setup()
+local handler = require("plugins.lsp.handlers")
+handler.setup()
 require("plugins.lsp.null-ls")
+
+-- TypeScript
+nvim_lsp.tsserver.setup {
+  on_attach = handler.on_attach,
+  filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+  cmd = { "typescript-language-server", "--stdio" }
+}

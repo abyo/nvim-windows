@@ -110,3 +110,5 @@ plugin/
 .vscode
 ultisnips/
 lua-language-server/
+
+.DS_Store

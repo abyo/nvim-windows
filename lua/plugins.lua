@@ -34,6 +34,7 @@ return packer.startup(function(use)
   use 'kyazdani42/nvim-web-devicons'                  -- Adds file type icons to Vim plugins
 
   -- General
+  use "windwp/nvim-ts-autotag"                        -- Auto clse tags for html
   use "windwp/nvim-autopairs"                         -- Autopairs, integrates with both cmp and treesitter
   use "b3nj5m1n/kommentary"                           -- Commenting plugin
   use "akinsho/bufferline.nvim"                       -- Snazzy bufferline
@@ -72,10 +73,13 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig"                         -- Enable native LSP
   use "williamboman/nvim-lsp-installer"               -- Language server installer
   use "jose-elias-alvarez/null-ls.nvim"               -- Inject LSP diagnostics, code actions ...
+  use "onsails/lspkind-nvim"                          -- VSCode like pictograms
 
   -- Fzf
   use 'kyazdani42/nvim-tree.lua'                      -- File explorer tree
   use "nvim-telescope/telescope.nvim"                 -- Find, Filter, Preview, Pick. All lua, all the time.
+  use "nvim-telescope/telescope-file-browser.nvim" 
+  use "nvim-tree/nvim-web-devicons"
   use "ahmedkhalf/project.nvim"                       -- Project manager
 
   -- Treesitter

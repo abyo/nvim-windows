@@ -12,8 +12,29 @@ configs.setup {
   autopairs = { enable = true },
   highlight = {
     enable = true,
-    disable = { "" }, -- list of language that will be disabled
+    disable = {}, -- list of language that will be disabled
     additional_vim_regex_highlighting = true,
   },
-  indent = { enable = true }
+  indent = {
+    enable = true,
+    disable = {}
+  },
+  autotag = {
+    enable = true,
+  },
+  ensure_installed = {
+    "tsx",
+    "toml",
+    "fish",
+    "php",
+    "json",
+    "yaml",
+    "swift",
+    "css",
+    "html",
+    "lua"
+  }
 }
+
+local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
+parser_config.tsx.filetype_to_parsername = { "javascript", "typescript.tsx" }
