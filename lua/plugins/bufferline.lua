@@ -5,6 +5,8 @@ end
 
 bufferline.setup {
   options = {
+    mode = "tabs",
+    separator_style = "slant",
     numbers = "none", -- | "ordinal" | "buffer_id" | "both" | function({ ordinal, id, lower, raise }): string,
     close_command = "Bdelete! %d", -- can be a string | function, see "Mouse actions"
     right_mouse_command = "Bdelete! %d", -- can be a string | function, see "Mouse actions"
@@ -66,13 +68,14 @@ bufferline.setup {
     persist_buffer_sort = true, -- whether or not custom sorted buffers should persist
     -- can also be a table containing 2 custom separators
     -- [focused and unfocused]. eg: { '|', '|' }
-    separator_style = "thin", -- | "thick" | "thin" | { 'any', 'any' },
     enforce_regular_tabs = true,
     always_show_bufferline = true,
     -- sort_by = 'id' | 'extension' | 'relative_directory' | 'directory' | 'tabs' | function(buffer_a, buffer_b)
     --   -- add custom logic
     --   return buffer_a.modified > buffer_b.modified
     -- end
+    always_show_bufferline = false,
+    color_icons = true
   },
   highlights = {
     fill = {
@@ -168,3 +171,6 @@ bufferline.setup {
     },
   },
 }
+
+vim.keymap.set("n", "<Tab>", "<Cmd>BufferLineCycleNext<CR>", {})
+vim.keymap.set("n", "<S-Tab>", "<Cmd>BufferLineCyclePrev<CR>", {})

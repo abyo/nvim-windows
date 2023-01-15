@@ -51,6 +51,7 @@ return packer.startup(function(use)
 
   -- Git
   use "lewis6991/gitsigns.nvim"                       -- Git integration
+  use "dinhhuy258/git.nvim"                           -- Open Git
 
   -- Colorscheme
   use 'marko-cerovac/material.nvim'                   -- Use Material Theme
@@ -73,6 +74,9 @@ return packer.startup(function(use)
   use "williamboman/nvim-lsp-installer"               -- Language server installer
   use "jose-elias-alvarez/null-ls.nvim"               -- Inject LSP diagnostics, code actions ...
   use "onsails/lspkind-nvim"                          -- VSCode like pictograms
+  use "glepnir/lspsaga.nvim"                          -- LSP hover doc
+  use "williamboman/mason.nvim"                       -- additional LSP support
+  use "williamboman/mason-lspconfig.nvim"             -- additional LSP support
 
   -- Fzf
   use 'kyazdani42/nvim-tree.lua'                      -- File explorer tree
