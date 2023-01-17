@@ -7,6 +7,7 @@ require("plugins.lsp.lsp-installer")
 local handler = require("plugins.lsp.handlers")
 handler.setup()
 require("plugins.lsp.null-ls")
+require("plugins.prettier.lua")
 
 -- TypeScript
 nvim_lsp.tsserver.setup {

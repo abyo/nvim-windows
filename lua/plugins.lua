@@ -73,6 +73,7 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig"                         -- Enable native LSP
   use "williamboman/nvim-lsp-installer"               -- Language server installer
   use "jose-elias-alvarez/null-ls.nvim"               -- Inject LSP diagnostics, code actions ...
+  use "MunifTanjim/prettier.nvim"
   use "onsails/lspkind-nvim"                          -- VSCode like pictograms
   use "glepnir/lspsaga.nvim"                          -- LSP hover doc
   use "williamboman/mason.nvim"                       -- additional LSP support
