@@ -1,9 +1,15 @@
-local fn = vim.fn
-local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
-
-if fn.empty(fn.glob(install_path)) > 0 then
-  PACKER_BOOTSTRAP = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- latest stable release
+    lazypath,
+  })
 end
+vim.opt.rtp:prepend(lazypath)
 
 -- Autocommand to reload plugins.lua on save
 vim.cmd [[
@@ -13,83 +19,68 @@ vim.cmd [[
   augroup end
 ]]
 
-local status_ok, packer = pcall(require, "packer")
-if not status_ok then
-  return
-end
+-- example using a list of specs with the default options
+vim.g.mapleader = " " -- make sure to set `mapleader` before lazy so your mappings are correct
 
-packer.init {
-  display = {
-    open_fn = function()
-      return require("packer.util").float { border = "rounded" }
-    end,
-  },
-}
-
-return packer.startup(function(use)
+return require("lazy").setup({
   -- Dependencies
-  use "wbthomason/packer.nvim"                        -- Packer manage itself
-  use "nvim-lua/popup.nvim"                           -- An implementation of the Popup API from vim in Neovim
-  use "nvim-lua/plenary.nvim"                         -- Useful lua functions used by lots of plugins
+  "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
+  , "nvim-lua/plenary.nvim" -- Useful lua functions used by lots of plugins
 
   -- General
-  use "windwp/nvim-ts-autotag"                        -- Auto clse tags for html
-  use "windwp/nvim-autopairs"                         -- Autopairs, integrates with both cmp and treesitter
-  use "b3nj5m1n/kommentary"                           -- Commenting plugin
-  use "akinsho/bufferline.nvim"                       -- Snazzy bufferline
-  use "moll/vim-bbye"                                 -- Bclose.vim but rewritten and well maintained.
-  use 'nacro90/numb.nvim'                             -- Easy peek lines
-  use 'mg979/vim-visual-multi'                        -- Multiple cursors
-  use 'nvim-lualine/lualine.nvim'                     -- Easy to configure neovim statusline
-  use "akinsho/toggleterm.nvim"                       -- Easily manage multiple terminal windows
-  use 'lewis6991/impatient.nvim'                      -- Improve startup time
-  use "lukas-reineke/indent-blankline.nvim"           -- Indent guides
+  , "windwp/nvim-ts-autotag" -- Auto clse tags for html
+  , "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
+  , "b3nj5m1n/kommentary" -- Commenting plugin
+  , "akinsho/bufferline.nvim" -- Snazzy bufferline
+  , "moll/vim-bbye" -- Bclose.vim but rewritten and well maintained.
+  , 'nacro90/numb.nvim' -- Easy peek lines
+  , 'mg979/vim-visual-multi' -- Multiple cursors
+  , 'nvim-lualine/lualine.nvim' -- Easy to configure neovim statusline
+  , "akinsho/toggleterm.nvim" -- Easily manage multiple terminal windows
+  , 'lewis6991/impatient.nvim' -- Improve startup time
+  , "lukas-reineke/indent-blankline.nvim" -- Indent guides
 
   -- Startify
-  use 'goolord/alpha-nvim'                            -- Greeter like startify
-  use "antoinemadec/FixCursorHold.nvim"               -- Fix lsp doc highlight
+  , 'goolord/alpha-nvim' -- Greeter like startify
+  , "antoinemadec/FixCursorHold.nvim" -- Fix lsp doc highlight
 
   -- Git
-  use "lewis6991/gitsigns.nvim"                       -- Git integration
-  use "dinhhuy258/git.nvim"                           -- Open Git
+  , "lewis6991/gitsigns.nvim" -- Git integration
+  , "dinhhuy258/git.nvim" -- Open Git
 
   -- Colorscheme
-  use 'marko-cerovac/material.nvim'                   -- Use Material Theme
+  , 'marko-cerovac/material.nvim' -- ,Material Theme
 
   -- Auto-completion
-  use "hrsh7th/nvim-cmp"                              -- Completion (cmp) plugin
-  use "hrsh7th/cmp-buffer"                            -- Cmp source for buffer words
-  use "hrsh7th/cmp-path"                              -- Cmp source for path
-  use "hrsh7th/cmp-nvim-lsp"                          -- Cmp source for LSP client
-  use "hrsh7th/cmp-nvim-lua"                          -- Cmp source for nvim lua
-  use "hrsh7th/cmp-cmdline"                           -- Cmp source for vim's cmdline
-  use "saadparwaiz1/cmp_luasnip"                      -- Luasnip completion source
+  , "hrsh7th/nvim-cmp" -- Completion (cmp) plugin
+  , "hrsh7th/cmp-buffer" -- Cmp source for buffer words
+  , "hrsh7th/cmp-path" -- Cmp source for path
+  , "hrsh7th/cmp-nvim-lsp" -- Cmp source for LSP client
+  , "hrsh7th/cmp-nvim-lua" -- Cmp source for nvim lua
+  , "hrsh7th/cmp-cmdline" -- Cmp source for vim's cmdline
+  , "saadparwaiz1/cmp_luasnip" -- Luasnip completion source
 
   -- Snippets
-  use "L3MON4D3/LuaSnip"                              -- Snippet engine
-  use "rafamadriz/friendly-snippets"                  -- Preconfigured snippets
+  , "L3MON4D3/LuaSnip" -- Snippet engine
+  , "rafamadriz/friendly-snippets" -- Preconfigured snippets
 
   -- LSP
-  use "neovim/nvim-lspconfig"                         -- Enable native LSP
-  use "williamboman/nvim-lsp-installer"               -- Language server installer
-  use "jose-elias-alvarez/null-ls.nvim"               -- Inject LSP diagnostics, code actions ...
-  use "MunifTanjim/prettier.nvim"
-  use "onsails/lspkind-nvim"                          -- VSCode like pictograms
-  use "glepnir/lspsaga.nvim"                          -- LSP hover doc
-  use "williamboman/mason.nvim"                       -- additional LSP support
-  use "williamboman/mason-lspconfig.nvim"             -- additional LSP support
+  , "neovim/nvim-lspconfig" -- Enable native LSP
+  , "williamboman/nvim-lsp-installer" -- Language server installer
+  , "jose-elias-alvarez/null-ls.nvim" -- Inject LSP diagnostics, code actions ...
+  , "MunifTanjim/prettier.nvim"
+  , "onsails/lspkind-nvim" -- VSCode like pictograms
+  , "glepnir/lspsaga.nvim" -- LSP hover doc
+  , "williamboman/mason.nvim" -- additional LSP support
+  , "williamboman/mason-lspconfig.nvim" -- additional LSP support
 
   -- Fzf
-  use 'kyazdani42/nvim-tree.lua'                      -- File explorer tree
-  use "nvim-telescope/telescope.nvim"                 -- Find, Filter, Preview, Pick. All lua, all the time.
-  use "nvim-telescope/telescope-file-browser.nvim" 
-  use "nvim-tree/nvim-web-devicons"
-  use "ahmedkhalf/project.nvim"                       -- Project manager
+  , 'kyazdani42/nvim-tree.lua' -- File explorer tree
+  , "nvim-telescope/telescope.nvim" -- Find, Filter, Preview, Pick. All lua, all the time.
+  , "nvim-telescope/telescope-file-browser.nvim"
+  , "nvim-tree/nvim-web-devicons"
+  , "ahmedkhalf/project.nvim" -- Project manager
 
   -- Treesitter
-  use "nvim-treesitter/nvim-treesitter"               -- Treesitter configuration
-
-  if PACKER_BOOTSTRAP then
-    require("packer").sync()
-  end
-end)
+  , "nvim-treesitter/nvim-treesitter" -- Treesitter configuration
+})

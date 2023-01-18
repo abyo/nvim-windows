@@ -18,3 +18,17 @@ nvim_lsp.tsserver.setup {
 
 -- Tailwind
 nvim_lsp.tailwindcss.setup {}
+
+-- Emmet
+nvim_lsp.emmet_ls.setup({
+  filetypes = {
+    'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less'
+  },
+  init_options = {
+    html = {
+      options = {
+        ["bem.enabled"] = true,
+      }
+    }
+  }
+})
